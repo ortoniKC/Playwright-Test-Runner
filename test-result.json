@@ -1,0 +1,130 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "Y:/video/playWright/test-runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "name": "chromium",
+        "testDir": "Y:/video/playWright/test-runner",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)+(spec|test).[jt]s"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot"
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ]
+    ],
+    "rootDir": "Y:/video/playWright/test-runner",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "workers": 4
+  },
+  "suites": [
+    {
+      "title": "",
+      "file": "test/first.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "open letcode and verify title",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4075,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0
+                }
+              ]
+            }
+          ],
+          "file": "test/first.test.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "open letcode and login",
+          "ok": false,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 6069,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in\u001b[7m/\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in\u001b[7m/\u001b[27m\"\u001b[39m\n    at Y:\\video\\playWright\\test-runner\\test\\first.test.ts:22:24\n    at runNextTicks (internal/process/task_queues.js:62:5)\n    at processImmediate (internal/timers.js:429:9)\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:290:13)"
+                  },
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 7260,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in\u001b[7m/\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in\u001b[7m/\u001b[27m\"\u001b[39m\n    at Y:\\video\\playWright\\test-runner\\test\\first.test.ts:22:24\n    at runNextTicks (internal/process/task_queues.js:62:5)\n    at processImmediate (internal/timers.js:429:9)\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:290:13)"
+                  },
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 7222,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in\u001b[7m/\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in\u001b[7m/\u001b[27m\"\u001b[39m\n    at Y:\\video\\playWright\\test-runner\\test\\first.test.ts:22:24\n    at runNextTicks (internal/process/task_queues.js:62:5)\n    at processImmediate (internal/timers.js:429:9)\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:290:13)"
+                  },
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2
+                }
+              ]
+            }
+          ],
+          "file": "test/first.test.ts",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
