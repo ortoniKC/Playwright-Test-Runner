@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "tc001.test.ts"
+          "ex.test.ts"
         ],
         "timeout": 30000
       }
@@ -36,24 +36,24 @@
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "workers": 2
+    "workers": 4
   },
   "suites": [
     {
       "title": "",
-      "file": "test/tc001.test.ts",
+      "file": "test/ex.test.ts",
       "line": 0,
       "column": 0,
       "specs": [],
       "suites": [
         {
           "title": "TC001",
-          "file": "test/tc001.test.ts",
-          "line": 7,
+          "file": "test/ex.test.ts",
+          "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "Login positive _ JIRA101",
+              "title": "Login positive",
               "ok": true,
               "tests": [
                 {
@@ -65,7 +65,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 9783,
+                      "duration": 15076,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0
@@ -73,8 +73,8 @@
                   ]
                 }
               ],
-              "file": "test/tc001.test.ts",
-              "line": 23,
+              "file": "test/ex.test.ts",
+              "line": 8,
               "column": 5
             },
             {
@@ -90,7 +90,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2217,
+                      "duration": 8245,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0
@@ -98,8 +98,8 @@
                   ]
                 }
               ],
-              "file": "test/tc001.test.ts",
-              "line": 35,
+              "file": "test/ex.test.ts",
+              "line": 20,
               "column": 5
             }
           ]
