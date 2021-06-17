@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
         screenshot: "on",
         video: "on"
     },
-    testMatch: ["ex.test.ts"],
+    testMatch: ["tc001.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }]]
 

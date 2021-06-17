@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "ex.test.ts"
+          "tc001.test.ts"
         ],
         "timeout": 30000
       }
@@ -41,20 +41,20 @@
   "suites": [
     {
       "title": "",
-      "file": "test/ex.test.ts",
+      "file": "test/tc001.test.ts",
       "line": 0,
       "column": 0,
       "specs": [],
       "suites": [
         {
           "title": "TC001",
-          "file": "test/ex.test.ts",
-          "line": 5,
+          "file": "test/tc001.test.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
               "title": "Login positive",
-              "ok": false,
+              "ok": true,
               "tests": [
                 {
                   "timeout": 30000,
@@ -64,12 +64,8 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "failed",
-                      "duration": 10825,
-                      "error": {
-                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in/\u001b[7msignin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in/\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://letcode.in/\u001b[7msignin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://letcode.in/\"\u001b[39m\n    at Y:\\video\\playWright\\test-runner\\test\\ex.test.ts:18:28\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:290:13)"
-                      },
+                      "status": "passed",
+                      "duration": 12721,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0
@@ -77,13 +73,13 @@
                   ]
                 }
               ],
-              "file": "test/ex.test.ts",
-              "line": 13,
+              "file": "test/tc001.test.ts",
+              "line": 22,
               "column": 5
             },
             {
               "title": "Login again",
-              "ok": false,
+              "ok": true,
               "tests": [
                 {
                   "timeout": 30000,
@@ -92,9 +88,9 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "status": "timedOut",
-                      "duration": 34225,
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3314,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0
@@ -102,8 +98,8 @@
                   ]
                 }
               ],
-              "file": "test/ex.test.ts",
-              "line": 26,
+              "file": "test/tc001.test.ts",
+              "line": 34,
               "column": 5
             }
           ]

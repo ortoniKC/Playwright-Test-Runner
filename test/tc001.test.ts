@@ -11,7 +11,6 @@ test.describe("TC001", () => {
     let page: Page;
     test.beforeAll(async ({ browser }) => {
         page = await browser.newPage();
-        // constructor - Pages
         header = new HeaderPage(page);
         login = new LoginPage(page);
         common = new CommonFunctions(page);

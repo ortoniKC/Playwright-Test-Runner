@@ -3,8 +3,6 @@ import * as data from "../data/login.cred.json";
 
 test.describe("TC001", () => {
 
-    // test.beforeAll()
-
     test("Login positive", async ({ headerPage, loginPage, common, letcodeInPage }) => {
         await letcodeInPage.goto("https://letcode.in/")
         expect(letcodeInPage.url()).toBe("https://letcode.in/")
