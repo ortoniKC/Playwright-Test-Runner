@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "tc001.test.ts"
+          "shadow.test.ts"
         ],
         "timeout": 30000
       }
@@ -41,68 +41,34 @@
   "suites": [
     {
       "title": "",
-      "file": "test/tc001.test.ts",
+      "file": "shadow-dom/shadow.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "TC001",
-          "file": "test/tc001.test.ts",
-          "line": 7,
-          "column": 6,
-          "specs": [
+          "title": "chromium bug App",
+          "ok": true,
+          "tests": [
             {
-              "title": "Login positive",
-              "ok": true,
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 12721,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0
-                    }
-                  ]
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5782,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0
                 }
-              ],
-              "file": "test/tc001.test.ts",
-              "line": 22,
-              "column": 5
-            },
-            {
-              "title": "Login again",
-              "ok": true,
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 3314,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0
-                    }
-                  ]
-                }
-              ],
-              "file": "test/tc001.test.ts",
-              "line": 34,
-              "column": 5
+              ]
             }
-          ]
+          ],
+          "file": "shadow-dom/shadow.test.ts",
+          "line": 11,
+          "column": 1
         }
       ]
     }
