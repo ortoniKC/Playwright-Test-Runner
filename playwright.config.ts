@@ -5,10 +5,10 @@ const config: PlaywrightTestConfig = {
     use: {
         headless: false,
         channel: "chrome",
-        screenshot: "on",
-        video: "on"
+        screenshot: "off",
+        video: "off"
     },
-    testMatch: ["shadow.test.ts"],
+    testMatch: ["visual.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }]]
 

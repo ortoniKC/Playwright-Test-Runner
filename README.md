@@ -39,3 +39,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright Test Runner Group Disadvantage | Playwright tutorial - Part 26](https://youtu.be/zvAJZVIfxfk)
 
 [How To Handle Shadow DOM | Playwright tutorial - Part 27](https://youtu.be/4v8iPJH8_hg)
+
+[Playwright Visual Comparisons | Playwright part - 28](https://youtu.be/kyAeH-7lAL4)
