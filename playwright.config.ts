@@ -6,9 +6,10 @@ const config: PlaywrightTestConfig = {
         headless: false,
         channel: "chrome",
         screenshot: "off",
-        video: "off"
+        video: "off",
+        // slowMo: 1000
     },
-    testMatch: ["visual.test.ts"],
+    testMatch: ["github.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }]]
 

@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "visual.test.ts"
+          "github.test.ts"
         ],
         "timeout": 30000
       }
@@ -41,53 +41,24 @@
   "suites": [
     {
       "title": "",
-      "file": "visual-comparsion/visual.test.ts",
+      "file": "locators/github.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Visual comparsion",
-          "ok": false,
+          "title": "In depth",
+          "ok": true,
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 0,
               "annotations": [],
               "expectedStatus": "passed",
               "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 3704,
-                  "error": {
-                    "message": "\u001b[31mSnapshot comparison failed:\u001b[39m\n\nExpected: \u001b[33mY:\\video\\playWright\\test-runner\\test-results\\visual-comparsion-visual-Visual-comparsion-chromium\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mY:\\video\\playWright\\test-runner\\test-results\\visual-comparsion-visual-Visual-comparsion-chromium\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mY:\\video\\playWright\\test-runner\\test-results\\visual-comparsion-visual-Visual-comparsion-chromium\\letcode-diff.png\u001b[39m",
-                    "stack": "Error: \u001b[31mSnapshot comparison failed:\u001b[39m\n\nExpected: \u001b[33mY:\\video\\playWright\\test-runner\\test-results\\visual-comparsion-visual-Visual-comparsion-chromium\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mY:\\video\\playWright\\test-runner\\test-results\\visual-comparsion-visual-Visual-comparsion-chromium\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mY:\\video\\playWright\\test-runner\\test-results\\visual-comparsion-visual-Visual-comparsion-chromium\\letcode-diff.png\u001b[39m\n    at Y:\\video\\playWright\\test-runner\\visual-comparsion\\visual.test.ts:8:9\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:290:13)"
-                  },
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0
-                }
-              ]
-            }
-          ],
-          "file": "visual-comparsion/visual.test.ts",
-          "line": 3,
-          "column": 1
-        },
-        {
-          "title": "example test",
-          "ok": true,
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 1790,
+                  "duration": 381470,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0
@@ -95,9 +66,9 @@
               ]
             }
           ],
-          "file": "visual-comparsion/visual.test.ts",
-          "line": 12,
-          "column": 1
+          "file": "locators/github.test.ts",
+          "line": 18,
+          "column": 6
         }
       ]
     }
