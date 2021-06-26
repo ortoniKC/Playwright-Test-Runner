@@ -13,9 +13,7 @@ test("Signin into Git", async ({ page }) => {
 
 })
 
-
-
-test.only("In depth", async ({ page }) => {
+test("In depth", async ({ page }) => {
     await page.goto('https://opengiro.ing.de/pub/girokonto-einzelkonto');
     await page.pause();
     await page.fill("input:below(:text('Prof.')):right-of(:text('Vorname'))",
