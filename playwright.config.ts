@@ -3,7 +3,7 @@ import { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
     use: {
-        headless: false,
+        headless: true,
         channel: "chrome",
         screenshot: "off",
         video: "off",
