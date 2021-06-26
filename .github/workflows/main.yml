@@ -5,7 +5,7 @@ on:
 
 jobs:
   e2e-tests:
-    runs-on: ubuntu-latest # or macos-latest, windows-latest
+    runs-on: windows-latest # or macos-latest, ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
