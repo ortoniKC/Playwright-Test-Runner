@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "github.test.ts"
+          "auth.ts"
         ],
         "timeout": 30000
       }
@@ -41,34 +41,47 @@
   "suites": [
     {
       "title": "",
-      "file": "locators/github.test.ts",
+      "file": "network/auth.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "In depth",
-          "ok": true,
-          "tests": [
+          "title": "Network - Playwright",
+          "file": "network/auth.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 0,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [
+              "title": "Http Authentication",
+              "ok": false,
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 381470,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 2019,
+                      "error": {
+                        "message": "page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://the-internet.herokuapp.com/basic_auth\n=========================== logs ===========================\nnavigating to \"https://the-internet.herokuapp.com/basic_auth\", waiting until \"load\"\n============================================================\nNote: use DEBUG=pw:api environment variable to capture Playwright logs.",
+                        "stack": "page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://the-internet.herokuapp.com/basic_auth\n=========================== logs ===========================\nnavigating to \"https://the-internet.herokuapp.com/basic_auth\", waiting until \"load\"\n============================================================\nNote: use DEBUG=pw:api environment variable to capture Playwright logs.\nError\n    at Object.captureStackTrace (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\utils\\stackTrace.js:51:19)\n    at Connection.sendMessageToServer (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\connection.js:69:48)\n    at Proxy.<anonymous> (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\channelOwner.js:64:61)\n    at Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\frame.js:100:65\n    at Frame._wrapApiCall (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\channelOwner.js:77:34)\n    at Frame.goto (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\frame.js:98:21)\n    at Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\page.js:267:60\n    at Page._attributeToPage (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\page.js:202:20)\n    at Page.goto (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\client\\page.js:267:21)\n    at Y:\\video\\playWright\\test-runner\\network\\auth.ts:21:20\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:290:13)"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0
+                    }
+                  ]
                 }
-              ]
+              ],
+              "file": "network/auth.ts",
+              "line": 8,
+              "column": 5
             }
-          ],
-          "file": "locators/github.test.ts",
-          "line": 18,
-          "column": 6
+          ]
         }
       ]
     }

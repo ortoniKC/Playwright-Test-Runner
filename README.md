@@ -45,3 +45,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright Relative Locator | Playwright - part 29](https://youtu.be/bQjsXcxGjcg)
 
 [Playwright Github Action | Playwright - part 30](https://youtu.be/gjHEApRdFV4)
+
+[Playwright Skip Login | Playwright Tutorial part - 31](https://youtu.be/WHyQsX0w_5g)
+
+[HTTP Authentication | Playwright Tutorial - part 32](https://youtu.be/d80tgo0lnGs)

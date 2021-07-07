@@ -3,13 +3,13 @@ import { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
     use: {
-        headless: true,
+        headless: false,
         channel: "chrome",
         screenshot: "only-on-failure",
         video: "retain-on-failure",
         // slowMo: 1000
     },
-    testMatch: ["**.test.ts"],
+    testMatch: ["auth.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }]]
 
