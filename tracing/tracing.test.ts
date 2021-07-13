@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-test("", async ({ browser }) => {
+test("Tracing", async ({ browser }) => {
     const context = await browser.newContext();
     // start tracing
     await context.tracing.start(

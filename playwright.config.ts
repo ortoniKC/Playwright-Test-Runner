@@ -10,7 +10,7 @@ const config: PlaywrightTestConfig = {
         // slowMo: 1000
     },
 
-    testMatch: ["tracing.test.ts"],
+    testMatch: ["tc001.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }]]
 
