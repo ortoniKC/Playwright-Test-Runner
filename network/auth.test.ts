@@ -12,10 +12,10 @@ test.describe("Network - Playwright", () => {
             //     username: "",
             //     password: ""
             // },
-            // httpCredentials: {
-            //     username: "admin",
-            //     password: "admin"
-            // }
+            httpCredentials: {
+                username: "admin",
+                password: "admin"
+            }
         })
         const page = await context.newPage();
         await page.goto("https://the-internet.herokuapp.com/basic_auth");

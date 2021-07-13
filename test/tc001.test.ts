@@ -20,7 +20,6 @@ test.describe("TC001", () => {
     })
 
     test("Login positive", async () => {
-        await page.goto("https://letcode.in")
         expect(page.url()).toBe("https://letcode.in/")
         await header.clickLoginLink();
         expect(page.url()).toBe("https://letcode.in/signin")
@@ -32,7 +31,6 @@ test.describe("TC001", () => {
         await header.clickSignOutLink();
     });
     test("Login again", async () => {
-        await page.goto("https://letcode.in")
         await header.clickLoginLink();
         await login.login("koushik350@gmail.com", data.pass);
         await page.waitForNavigation();
