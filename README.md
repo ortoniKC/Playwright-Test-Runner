@@ -51,3 +51,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [HTTP Authentication | Playwright Tutorial - part 32](https://youtu.be/d80tgo0lnGs)
 
 [Playwright Trace Viewer | Playwright Tutorial - part 33](https://youtu.be/jY3CWJQ4V1I)
+
+[Playwright Fixtures | Playwright Tutorial - part 34](https://youtu.be/3gmRLLT_hx0)

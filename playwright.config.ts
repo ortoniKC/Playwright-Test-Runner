@@ -9,8 +9,8 @@ const config: PlaywrightTestConfig = {
         video: "retain-on-failure",
         // slowMo: 1000
     },
-
-    testMatch: ["tc001.test.ts"],
+    workers: 2,
+    testMatch: ["mytest.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }]]
 

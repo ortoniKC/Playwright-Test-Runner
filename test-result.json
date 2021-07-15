@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "tc001.test.ts"
+          "mytest.test.ts"
         ],
         "timeout": 30000
       }
@@ -36,73 +36,43 @@
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "workers": 4
+    "workers": 2
   },
   "suites": [
     {
       "title": "",
-      "file": "test/tc001.test.ts",
+      "file": "fixtures/mytest.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "TC001",
-          "file": "test/tc001.test.ts",
-          "line": 7,
-          "column": 6,
-          "specs": [
+          "title": "my tets 1",
+          "ok": true,
+          "tests": [
             {
-              "title": "Login positive",
-              "ok": true,
-              "tests": [
+              "timeout": 30000,
+              "annotations": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 10440,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0
-                    }
-                  ]
+                  "type": "skip"
                 }
               ],
-              "file": "test/tc001.test.ts",
-              "line": 33,
-              "column": 5
-            },
-            {
-              "title": "Login again",
-              "ok": true,
-              "tests": [
+              "expectedStatus": "skipped",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 2986,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0
-                    }
-                  ]
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 3,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0
                 }
-              ],
-              "file": "test/tc001.test.ts",
-              "line": 44,
-              "column": 5
+              ]
             }
-          ]
+          ],
+          "file": "fixtures/mytest.test.ts",
+          "line": 3,
+          "column": 1
         }
       ]
     }
