@@ -53,3 +53,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright Trace Viewer | Playwright Tutorial - part 33](https://youtu.be/jY3CWJQ4V1I)
 
 [Playwright Fixtures | Playwright Tutorial - part 34](https://youtu.be/3gmRLLT_hx0)
+
+[Playwright Fixtures 2| Playwright Tutorial - part 3](https://youtu.be/XAAYP9PXToY)

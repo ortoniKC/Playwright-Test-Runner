@@ -7,12 +7,11 @@ const config: PlaywrightTestConfig = {
         channel: "chrome",
         screenshot: "only-on-failure",
         video: "retain-on-failure",
-        // slowMo: 1000
+        trace: "on"
     },
     workers: 2,
-    testMatch: ["mytest.test.ts"],
+    testMatch: ["test.ts"],
     retries: 0,
-    reporter: [["dot"], ["json", { outputFile: "test-result.json" }]]
-
+    reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],
 }
 export default config;

@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "mytest.test.ts"
+          "test.ts"
         ],
         "timeout": 30000
       }
@@ -41,28 +41,24 @@
   "suites": [
     {
       "title": "",
-      "file": "fixtures/mytest.test.ts",
+      "file": "fixtures/test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "my tets 1",
+          "title": "test 1",
           "ok": true,
           "tests": [
             {
               "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "skip"
-                }
-              ],
-              "expectedStatus": "skipped",
+              "annotations": [],
+              "expectedStatus": "passed",
               "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 3,
+                  "status": "passed",
+                  "duration": 22767,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0
@@ -70,8 +66,8 @@
               ]
             }
           ],
-          "file": "fixtures/mytest.test.ts",
-          "line": 3,
+          "file": "fixtures/test.ts",
+          "line": 8,
           "column": 1
         }
       ]
