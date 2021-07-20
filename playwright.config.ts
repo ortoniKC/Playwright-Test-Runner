@@ -4,13 +4,14 @@ import { PlaywrightTestConfig } from "@playwright/test";
 const config: PlaywrightTestConfig = {
     use: {
         headless: false,
-        channel: "chrome",
+        browserName: "firefox",
         screenshot: "only-on-failure",
         video: "retain-on-failure",
-        trace: "on"
+        // trace: "on",
     },
+
     workers: 2,
-    testMatch: ["test.ts"],
+    testMatch: ["annotation.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],
 }

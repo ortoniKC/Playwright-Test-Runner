@@ -16,7 +16,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "test.ts"
+          "annotation.test.ts"
         ],
         "timeout": 30000
       }
@@ -41,12 +41,12 @@
   "suites": [
     {
       "title": "",
-      "file": "fixtures/test.ts",
+      "file": "annotation/annotation.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "test 1",
+          "title": "first test",
           "ok": true,
           "tests": [
             {
@@ -58,16 +58,87 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 22767,
-                  "stdout": [],
+                  "duration": 3,
+                  "stdout": [
+                    {
+                      "text": "first test running\n"
+                    },
+                    {
+                      "text": "first test completed\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0
                 }
               ]
             }
           ],
-          "file": "fixtures/test.ts",
+          "file": "annotation/annotation.test.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "second test",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5922,
+                  "stdout": [
+                    {
+                      "text": "second test running\n"
+                    },
+                    {
+                      "text": "second test completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0
+                }
+              ]
+            }
+          ],
+          "file": "annotation/annotation.test.ts",
           "line": 8,
+          "column": 1
+        },
+        {
+          "title": "third test",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1,
+                  "stdout": [
+                    {
+                      "text": "third test running\n"
+                    },
+                    {
+                      "text": "third test completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0
+                }
+              ]
+            }
+          ],
+          "file": "annotation/annotation.test.ts",
+          "line": 13,
           "column": 1
         }
       ]
