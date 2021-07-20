@@ -7,8 +7,13 @@
         "test": "npx playwright test",
         "test-us": "npx playwright test --update-snapshots"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "playwright",
+        "playwright tutorial",
+        "playwright test runner",
+        "letcode koushik"
+    ],
+    "author": "Koushik (LetCode)",
     "license": "ISC",
     "devDependencies": {
         "@playwright/test": "^1.12.3",

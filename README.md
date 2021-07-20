@@ -54,4 +54,6 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 
 [Playwright Fixtures | Playwright Tutorial - part 34](https://youtu.be/3gmRLLT_hx0)
 
-[Playwright Fixtures 2| Playwright Tutorial - part 3](https://youtu.be/XAAYP9PXToY)
+[Playwright Fixtures 2| Playwright Tutorial - part 35](https://youtu.be/XAAYP9PXToY)
+
+[Playwright UI Verifications | Playwright Tutorial - part 36](https://youtu.be/340d_Kkl9Eg)
