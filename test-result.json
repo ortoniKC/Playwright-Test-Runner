@@ -4,7 +4,10 @@
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
-    "grep": {},
+    "grep": [
+      {},
+      {}
+    ],
     "grepInvert": null,
     "maxFailures": 0,
     "preserveOutput": "always",
@@ -17,8 +20,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "baseUrl.test.ts",
-          "baseUrl.test2.ts"
+          "tags.test.ts"
         ],
         "timeout": 30000
       }
@@ -52,13 +54,13 @@
   },
   "suites": [
     {
-      "title": "baseUrlDemo\\baseUrl.test.ts",
-      "file": "baseUrlDemo/baseUrl.test.ts",
+      "title": "tags\\tags.test.ts",
+      "file": "tags/tags.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Goto Sign up page",
+          "title": "Test signup page @smoke",
           "ok": true,
           "tests": [
             {
@@ -70,28 +72,43 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 6050,
-                  "stdout": [],
+                  "duration": 3,
+                  "stdout": [
+                    {
+                      "text": "some signup test @smoke\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl-Goto-Sign-up-page-chromium\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "baseUrlDemo/baseUrl.test.ts",
-          "line": 4,
+          "file": "tags/tags.test.ts",
+          "line": 3,
           "column": 1
         },
         {
-          "title": "Goto Login up page",
+          "title": "Test login page @sanity",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "file": "tags/tags.test.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Test login page @reg",
           "ok": true,
           "tests": [
             {
@@ -103,28 +120,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5070,
-                  "stdout": [],
+                  "duration": 0,
+                  "stdout": [
+                    {
+                      "text": "some login test @reg\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl-Goto-Login-up-page-chromium\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "baseUrlDemo/baseUrl.test.ts",
+          "file": "tags/tags.test.ts",
           "line": 11,
           "column": 1
         },
         {
-          "title": "Goto workspace up page",
+          "title": "Test add to cart page @smoke",
           "ok": true,
           "tests": [
             {
@@ -136,65 +151,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8032,
-                  "stdout": [],
+                  "duration": 1,
+                  "stdout": [
+                    {
+                      "text": "some add to cart test @smoke\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl-Goto-workspace-up-page-chromium\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "baseUrlDemo/baseUrl.test.ts",
+          "file": "tags/tags.test.ts",
           "line": 16,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "baseUrlDemo\\baseUrl.test2.ts",
-      "file": "baseUrlDemo/baseUrl.test2.ts",
-      "line": 0,
-      "column": 0,
-      "specs": [
-        {
-          "title": "Goto Sign up page",
-          "ok": true,
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 12299,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl.test2.ts-Goto-Sign-up-page-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "file": "baseUrlDemo/baseUrl.test2.ts",
-          "line": 9,
           "column": 1
         }
       ]
