@@ -5,6 +5,7 @@
     "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
+    "grepInvert": null,
     "maxFailures": 0,
     "preserveOutput": "always",
     "projects": [
@@ -16,59 +17,128 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "basicVerification.test.ts"
+          "test.ts"
         ],
         "timeout": 30000
       }
     ],
     "reporter": [
       [
-        "dot"
+        "dot",
+        null
       ],
       [
         "json",
         {
           "outputFile": "test-result.json"
         }
+      ],
+      [
+        "Y:\\video\\playWright\\test-runner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
+        null
       ]
     ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
     "rootDir": "Y:/video/playWright/test-runner",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "workers": 4
+    "workers": 4,
+    "_launch": []
   },
   "suites": [
     {
-      "title": "",
-      "file": "UIverification/basicVerification.test.ts",
+      "title": "fixtures\\test.ts",
+      "file": "fixtures/test.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Basic UI verification",
-          "ok": true,
-          "tests": [
+          "title": "Allure Report for login",
+          "file": "fixtures/test.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [
+              "title": "Login Positive",
+              "ok": true,
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 9012,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 15770,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-Login-Positive-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
                 }
-              ]
+              ],
+              "file": "fixtures/test.ts",
+              "line": 11,
+              "column": 5
+            },
+            {
+              "title": "Login negative",
+              "ok": false,
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 10087,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Welcome\"\u001b[39m\nReceived string:    \u001b[31m\" Error: The password is invalid or the user does not have a password. \"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Welcome\"\u001b[39m\nReceived string:    \u001b[31m\" Error: The password is invalid or the user does not have a password. \"\u001b[39m\n    at Y:\\video\\playWright\\test-runner\\fixtures\\test.ts:32:46\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:390:7)"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-Login-negative-chromium\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-Login-negative-chromium\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "file": "fixtures/test.ts",
+              "line": 23,
+              "column": 5
             }
-          ],
-          "file": "UIverification/basicVerification.test.ts",
-          "line": 3,
-          "column": 1
+          ]
         }
       ]
     }

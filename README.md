@@ -30,7 +30,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 
 [Playwright Test Runner | Playwright - Part 22](https://youtu.be/zyJHd-4_4Lk)
 
-[Playwright Test Runner | Commands | Playwright Tutorial - Part 23](https://youtu.be/_gnb7TAQ8sQ
+[Playwright Test Runner | Commands | Playwright Tutorial - Part 23](https://youtu.be/_gnb7TAQ8sQ)
 
 [Screenshot & Video On Test Failure | Playwright Tutorial - Part 24](https://youtu.be/P9VARCLnhKM)
 
@@ -57,3 +57,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright Fixtures 2| Playwright Tutorial - part 35](https://youtu.be/XAAYP9PXToY)
 
 [Playwright UI Verifications | Playwright Tutorial - part 36](https://youtu.be/340d_Kkl9Eg)
+
+[What's new in Playwright? | Playwright Tutorial - Part 37](https://youtu.be/3IexgqtblT4)
+
+[Playwright Allure Report | Playwright Tutorial - Part 38](https://youtu.be/Pa7_klzkCXU)
