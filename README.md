@@ -61,3 +61,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [What's new in Playwright? | Playwright Tutorial - Part 37](https://youtu.be/3IexgqtblT4)
 
 [Playwright Allure Report | Playwright Tutorial - Part 38](https://youtu.be/Pa7_klzkCXU)
+
+[Playwright Base URL | Playwright Tutorial - Part 39](https://youtu.be/w3lKsUCxeM8)

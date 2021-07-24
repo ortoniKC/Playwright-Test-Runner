@@ -6,9 +6,10 @@ const config: PlaywrightTestConfig = {
         headless: false,
         browserName: "chromium",
         screenshot: "on",
-        trace: "retain-on-failure"
+        trace: "retain-on-failure",
+        baseURL: "https://letcode.in"
     },
-    testMatch: ["test.ts"],
+    testMatch: ["baseUrl.test.ts", "baseUrl.test2.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
     ['experimental-allure-playwright']],

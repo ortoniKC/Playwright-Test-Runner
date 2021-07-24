@@ -17,7 +17,8 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "test.ts"
+          "baseUrl.test.ts",
+          "baseUrl.test2.ts"
         ],
         "timeout": 30000
       }
@@ -51,94 +52,150 @@
   },
   "suites": [
     {
-      "title": "fixtures\\test.ts",
-      "file": "fixtures/test.ts",
+      "title": "baseUrlDemo\\baseUrl.test.ts",
+      "file": "baseUrlDemo/baseUrl.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Allure Report for login",
-          "file": "fixtures/test.ts",
-          "line": 8,
-          "column": 6,
-          "specs": [
+          "title": "Goto Sign up page",
+          "ok": true,
+          "tests": [
             {
-              "title": "Login Positive",
-              "ok": true,
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 6050,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 15770,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-Login-Positive-chromium\\test-finished-1.png"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl-Goto-Sign-up-page-chromium\\test-finished-1.png"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "file": "fixtures/test.ts",
-              "line": 11,
-              "column": 5
-            },
-            {
-              "title": "Login negative",
-              "ok": false,
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "failed",
-                      "duration": 10087,
-                      "error": {
-                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Welcome\"\u001b[39m\nReceived string:    \u001b[31m\" Error: The password is invalid or the user does not have a password. \"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Welcome\"\u001b[39m\nReceived string:    \u001b[31m\" Error: The password is invalid or the user does not have a password. \"\u001b[39m\n    at Y:\\video\\playWright\\test-runner\\fixtures\\test.ts:32:46\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:390:7)"
-                      },
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-Login-negative-chromium\\trace.zip"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-Login-negative-chromium\\test-failed-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "file": "fixtures/test.ts",
-              "line": 23,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "file": "baseUrlDemo/baseUrl.test.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Goto Login up page",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5070,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl-Goto-Login-up-page-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "baseUrlDemo/baseUrl.test.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "Goto workspace up page",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 8032,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl-Goto-workspace-up-page-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "baseUrlDemo/baseUrl.test.ts",
+          "line": 16,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "baseUrlDemo\\baseUrl.test2.ts",
+      "file": "baseUrlDemo/baseUrl.test2.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "Goto Sign up page",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 12299,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\baseUrlDemo-baseUrl.test2.ts-Goto-Sign-up-page-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "baseUrlDemo/baseUrl.test2.ts",
+          "line": 9,
+          "column": 1
         }
       ]
     }
