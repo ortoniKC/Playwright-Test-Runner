@@ -4,10 +4,7 @@
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
-    "grep": [
-      {},
-      {}
-    ],
+    "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
     "preserveOutput": "always",
@@ -20,7 +17,7 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "tags.test.ts"
+          "youtube.test.ts"
         ],
         "timeout": 30000
       }
@@ -54,13 +51,13 @@
   },
   "suites": [
     {
-      "title": "tags\\tags.test.ts",
-      "file": "tags/tags.test.ts",
+      "title": "webscraping\\youtube.test.ts",
+      "file": "webscraping/youtube.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Test signup page @smoke",
+          "title": "Calculate youtube playlist duration1627406659146",
           "ok": true,
           "tests": [
             {
@@ -72,43 +69,38 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3,
+                  "duration": 13680,
                   "stdout": [
                     {
-                      "text": "some signup test @smoke\n"
+                      "text": "\u001b[33m74\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m1133.1666666666663\u001b[39m\n"
+                    },
+                    {
+                      "text": "Selenium Java - Tamil - YouTube -->18h 53m 9s\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\webscraping-youtube-Calculate-youtube-playlist-duration1627406662086-chromium\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "tags/tags.test.ts",
-          "line": 3,
-          "column": 1
+          "file": "webscraping/youtube.test.ts",
+          "line": 6,
+          "column": 5
         },
         {
-          "title": "Test login page @sanity",
-          "ok": true,
-          "tests": [
-            {
-              "timeout": 0,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "file": "tags/tags.test.ts",
-          "line": 7,
-          "column": 1
-        },
-        {
-          "title": "Test login page @reg",
+          "title": "Calculate youtube playlist duration1627406659165",
           "ok": true,
           "tests": [
             {
@@ -120,54 +112,35 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 0,
+                  "duration": 10445,
                   "stdout": [
                     {
-                      "text": "some login test @reg\n"
+                      "text": "\u001b[33m40\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m565.3666666666667\u001b[39m\n"
+                    },
+                    {
+                      "text": "Playwright with TypeScript & Jest - YouTube -->9h 25m 22s\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\webscraping-youtube-Calculate-youtube-playlist-duration1627406662106-chromium\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "tags/tags.test.ts",
-          "line": 11,
-          "column": 1
-        },
-        {
-          "title": "Test add to cart page @smoke",
-          "ok": true,
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1,
-                  "stdout": [
-                    {
-                      "text": "some add to cart test @smoke\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "file": "tags/tags.test.ts",
-          "line": 16,
-          "column": 1
+          "file": "webscraping/youtube.test.ts",
+          "line": 6,
+          "column": 5
         }
       ]
     }
