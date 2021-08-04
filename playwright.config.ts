@@ -10,8 +10,9 @@ const config: PlaywrightTestConfig = {
         baseURL: "https://letcode.in",
 
     },
+    // timeout: 5000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["youtube.test.ts"],
+    testMatch: ["apiresponse.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
     ['experimental-allure-playwright']],

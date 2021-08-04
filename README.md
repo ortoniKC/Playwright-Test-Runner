@@ -67,3 +67,9 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Tags in Test | Playwright Tutorial - Part 40](https://youtu.be/ZfTrdhKXAgo)
 
 [Calculate Youtube Playlist Duration | Web Scraping | Playwright Tutorial - Part 41](https://youtu.be/rUH1demFjQY)
+
+[How To Debug Playwright In VsCode | Playwright Tutorial - Part 42](https://youtu.be/Ink1oOqygWU)
+
+[Test Annotations | Playwright Tutorial - Part 43](https://youtu.be/l61cgSImhpU)
+
+[How To Wait For API Response | Playwright Tutorial - Part 44](https://youtu.be/MK0O8s3NBA4)

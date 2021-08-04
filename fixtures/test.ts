@@ -7,10 +7,7 @@ test.beforeEach(async ({ page }) => {
 
 test.describe("Allure Report for login", () => {
 
-
     test("Login Positive", async ({ headerPage, loginPage, commonPage, page }) => {
-
-        await headerPage.clickLoginLink();
         await headerPage.clickLoginLink();
         expect(page.url()).toBe("https://letcode.in/signin")
         await loginPage.enterUserName(data.email);
@@ -21,7 +18,6 @@ test.describe("Allure Report for login", () => {
         await headerPage.clickSignOutLink();
     })
     test("Login negative", async ({ headerPage, loginPage, commonPage, page }) => {
-
         await headerPage.clickLoginLink();
         await headerPage.clickLoginLink();
         expect(page.url()).toBe("https://letcode.in/signin")

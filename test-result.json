@@ -13,11 +13,11 @@
         "outputDir": "Y:/video/playWright/test-runner/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "name": "chromium",
+        "name": "",
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "youtube.test.ts"
+          "apiresponse.test.ts"
         ],
         "timeout": 30000
       }
@@ -51,96 +51,56 @@
   },
   "suites": [
     {
-      "title": "webscraping\\youtube.test.ts",
-      "file": "webscraping/youtube.test.ts",
+      "title": "network\\apiresponse.test.ts",
+      "file": "network/apiresponse.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Calculate youtube playlist duration1627406659146",
-          "ok": true,
+          "title": "Read API response",
+          "ok": false,
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectName": "chromium",
+              "projectName": "",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 13680,
+                  "status": "timedOut",
+                  "duration": 31962,
+                  "error": {
+                    "message": "Pending operations:\n  - page.waitForResponse at network\\apiresponse.test.ts:9:14\n\npage.waitForResponse: Page closed",
+                    "stack": "Pending operations:\n  - page.waitForResponse at network\\apiresponse.test.ts:9:14\n\npage.waitForResponse: Page closed\n    at Y:\\video\\playWright\\test-runner\\network\\apiresponse.test.ts:9:14\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:390:7)"
+                  },
                   "stdout": [
                     {
-                      "text": "\u001b[33m74\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m1133.1666666666663\u001b[39m\n"
-                    },
-                    {
-                      "text": "Selenium Java - Tamil - YouTube -->18h 53m 9s\n"
+                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 6f 72 74 6f 6e 69 4b 43 22 2c 0a 20 20 22 69 64 22 3a 20 35 38 37 36 39 38 33 33 2c 0a 20 20 22 6e 6f 64 65 ... 1389 more bytes>\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
                   "attachments": [
                     {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\network-apiresponse-Read-API-response\\trace.zip"
+                    },
+                    {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\webscraping-youtube-Calculate-youtube-playlist-duration1627406662086-chromium\\test-finished-1.png"
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\network-apiresponse-Read-API-response\\test-failed-1.png"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "file": "webscraping/youtube.test.ts",
-          "line": 6,
-          "column": 5
-        },
-        {
-          "title": "Calculate youtube playlist duration1627406659165",
-          "ok": true,
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 10445,
-                  "stdout": [
-                    {
-                      "text": "\u001b[33m40\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m565.3666666666667\u001b[39m\n"
-                    },
-                    {
-                      "text": "Playwright with TypeScript & Jest - YouTube -->9h 25m 22s\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\webscraping-youtube-Calculate-youtube-playlist-duration1627406662106-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "file": "webscraping/youtube.test.ts",
-          "line": 6,
-          "column": 5
+          "file": "network/apiresponse.test.ts",
+          "line": 3,
+          "column": 1
         }
       ]
     }
