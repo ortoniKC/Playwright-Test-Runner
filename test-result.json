@@ -17,9 +17,9 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "apiresponse.test.ts"
+          "test.ts"
         ],
-        "timeout": 30000
+        "timeout": 300000
       }
     ],
     "reporter": [
@@ -47,60 +47,56 @@
     "shard": null,
     "updateSnapshots": "missing",
     "workers": 4,
-    "_launch": []
+    "webServer": null
   },
   "suites": [
     {
-      "title": "network\\apiresponse.test.ts",
-      "file": "network/apiresponse.test.ts",
+      "title": "fixtures\\test.ts",
+      "file": "fixtures/test.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Read API response",
-          "ok": false,
-          "tests": [
+          "title": "Skip on Failure",
+          "file": "fixtures/test.ts",
+          "line": 9,
+          "column": 15,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
+              "title": "E2E test",
+              "ok": true,
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31962,
-                  "error": {
-                    "message": "Pending operations:\n  - page.waitForResponse at network\\apiresponse.test.ts:9:14\n\npage.waitForResponse: Page closed",
-                    "stack": "Pending operations:\n  - page.waitForResponse at network\\apiresponse.test.ts:9:14\n\npage.waitForResponse: Page closed\n    at Y:\\video\\playWright\\test-runner\\network\\apiresponse.test.ts:9:14\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\video\\playWright\\test-runner\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:390:7)"
-                  },
-                  "stdout": [
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
                     {
-                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 6f 72 74 6f 6e 69 4b 43 22 2c 0a 20 20 22 69 64 22 3a 20 35 38 37 36 39 38 33 33 2c 0a 20 20 22 6e 6f 64 65 ... 1389 more bytes>\n"
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 30929,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-E2E-test\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\network-apiresponse-Read-API-response\\trace.zip"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\network-apiresponse-Read-API-response\\test-failed-1.png"
-                    }
-                  ]
+                  "status": "expected"
                 }
               ],
-              "status": "unexpected"
+              "file": "fixtures/test.ts",
+              "line": 11,
+              "column": 5
             }
-          ],
-          "file": "network/apiresponse.test.ts",
-          "line": 3,
-          "column": 1
+          ]
         }
       ]
     }

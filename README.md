@@ -73,3 +73,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Test Annotations | Playwright Tutorial - Part 43](https://youtu.be/l61cgSImhpU)
 
 [How To Wait For API Response | Playwright Tutorial - Part 44](https://youtu.be/MK0O8s3NBA4)
+
+[Playwright Version 1.14 | Playwright Tutorial - Part 45](https://youtu.be/xRxFGEOq95M)
+
+[Playwright Test Runner Skip on Failure | Playwright Tutorial - Part 46](https://youtu.be/q8oZD5uO6_s)
