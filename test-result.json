@@ -17,9 +17,9 @@
         "testDir": "Y:/video/playWright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "test.ts"
+          "locatorsVsElementHandle.test.ts"
         ],
-        "timeout": 300000
+        "timeout": 30000
       }
     ],
     "reporter": [
@@ -51,52 +51,137 @@
   },
   "suites": [
     {
-      "title": "fixtures\\test.ts",
-      "file": "fixtures/test.ts",
+      "title": "locatorAPI\\locatorsVsElementHandle.test.ts",
+      "file": "locatorAPI/locatorsVsElementHandle.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Skip on Failure",
-          "file": "fixtures/test.ts",
-          "line": 9,
-          "column": 15,
-          "specs": [
+          "title": "Locator API",
+          "ok": true,
+          "tests": [
             {
-              "title": "E2E test",
-              "ok": true,
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 300000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 11912,
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 30929,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "Y:\\video\\playWright\\test-runner\\test-results\\fixtures-test.ts-E2E-test\\test-finished-1.png"
-                        }
-                      ]
+                      "text": "\u001b[33m30\u001b[39m\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/atom\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Challenge\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/chrome-native-message\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/covid-chrome-extension\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Cucumber-Parallel\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/cypress\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Cypress-1\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/cypress-documentation\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/cypress-example-recipes\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/cypress-realworld-app\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/design-resources-for-developers\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/February\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/flutter\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/FlutterExamples\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/flutter_deep_ar_face_effect\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Giphy-Chrome-extension\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/git-demo\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/JavaDS\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/javascript-programming\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Jio-Saavn-Dark-Theme\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Leaf\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/LeafBot\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/letCode\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/LetCodePOM\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/LetXPath\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Makaia\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/ML_AI-Python-\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/playwright\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Playwright-Test-Runner\n"
+                    },
+                    {
+                      "text": "https://github.com/ortoniKC/Playwright-TypeScript-Jest\n"
                     }
                   ],
-                  "status": "expected"
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\locatorAPI-locatorsVsElementHandle-Locator-API\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
-              "file": "fixtures/test.ts",
-              "line": 11,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "file": "locatorAPI/locatorsVsElementHandle.test.ts",
+          "line": 12,
+          "column": 6
         }
       ]
     }

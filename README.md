@@ -77,3 +77,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright Version 1.14 | Playwright Tutorial - Part 45](https://youtu.be/xRxFGEOq95M)
 
 [Playwright Test Runner Skip on Failure | Playwright Tutorial - Part 46](https://youtu.be/q8oZD5uO6_s)
+
+[Element Handle VS Locator API | Playwright Tutorial - Part 47](https://youtu.be/3Vsy2uSCo_Y)
