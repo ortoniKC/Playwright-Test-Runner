@@ -12,7 +12,7 @@ const config: PlaywrightTestConfig = {
     },
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["locatorsVsElementHandle.test.ts"],
+    testMatch: ["typesOfText.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
     ['experimental-allure-playwright']],

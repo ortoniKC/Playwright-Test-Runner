@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different text property</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        span {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hero bg-gray">
+        <div class="hero-body">
+            <h1>Different Types Of Text Properties</h1>
+            <p>Playwright Automation</p>
+            <button id="textContent" class="btn btn-primary">Text Content</button>
+            <button id="innerText" class="btn btn-primary">Inner Text</button>
+            <button id="innerHTML" class="btn btn-primary">Inner HTML</button>
+            <div class="card">
+                <div class="card-body">
+                    <p id="attach"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let tc = document.getElementById("textContent")
+        let it = document.getElementById("innerText")
+        let ih = document.getElementById("innerHTML")
+        let ele = document.getElementById("attach")
+        let text = `hey <strong>there</strong> <span>Am I visible?</span>`;
+        tc.addEventListener("click", () => {
+            ele.textContent = text;
+        })
+        it.addEventListener("click", () => {
+            ele.innerText = text;
+        })
+        ih.addEventListener("click", () => {
+            ele.innerHTML = text;
+        })
+    </script>
+</body>
+
+</html>
