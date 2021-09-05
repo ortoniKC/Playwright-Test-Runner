@@ -10,14 +10,14 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "Y:/video/playWright/test-runner/test-results",
+        "outputDir": "Y:/my-code-base/Playwright-Test-Runner/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "",
-        "testDir": "Y:/video/playWright/test-runner",
+        "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "typesOfText.test.ts"
+          "mobile.test.ts"
         ],
         "timeout": 30000
       }
@@ -34,7 +34,7 @@
         }
       ],
       [
-        "Y:\\video\\playWright\\test-runner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
+        "Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
         null
       ]
     ],
@@ -42,7 +42,7 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "Y:/video/playWright/test-runner",
+    "rootDir": "Y:/my-code-base/Playwright-Test-Runner",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -51,13 +51,13 @@
   },
   "suites": [
     {
-      "title": "allText\\typesOfText.test.ts",
-      "file": "allText/typesOfText.test.ts",
+      "title": "android\\mobile.test.ts",
+      "file": "android/mobile.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Type of text",
+          "title": "Run in Android - Chrome",
           "ok": true,
           "tests": [
             {
@@ -69,33 +69,27 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 6040,
+                  "duration": 17369,
                   "stdout": [
                     {
-                      "text": "Inner HTML: hey <strong>there</strong> <span>Am I visible?</span>\n"
+                      "text": "Model: Pixel 4a\n"
                     },
                     {
-                      "text": "Inner Text: hey there\n"
+                      "text": "Serial: 0A101JEC213041\n"
                     },
                     {
-                      "text": "Text Content: hey there Am I visible?\n"
+                      "text": "https://letcode.in/\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\video\\playWright\\test-runner\\test-results\\allText-typesOfText-Type-of-text\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "allText/typesOfText.test.ts",
+          "file": "android/mobile.test.ts",
           "line": 4,
           "column": 1
         }

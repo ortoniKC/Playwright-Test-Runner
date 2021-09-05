@@ -81,3 +81,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Element Handle VS Locator API | Playwright Tutorial - Part 47](https://youtu.be/3Vsy2uSCo_Y)
 
 [InnerHTML vs InnerText vs TextContent | Playwright Tutorial - Part 48](https://youtu.be/MxAZiAbv45Q)
+
+[Playwright Android Automation | Playwright Tutorial Part - 49](https://youtu.be/Nte3PIffyYk)
