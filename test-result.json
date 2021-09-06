@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "mobile.test.ts"
+          "amazonprice.test.ts"
         ],
         "timeout": 30000
       }
@@ -51,13 +51,13 @@
   },
   "suites": [
     {
-      "title": "android\\mobile.test.ts",
-      "file": "android/mobile.test.ts",
+      "title": "webscraping\\amazonprice.test.ts",
+      "file": "webscraping/amazonprice.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Run in Android - Chrome",
+          "title": "Amazon Price Drop Notification",
           "ok": true,
           "tests": [
             {
@@ -69,28 +69,28 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 17369,
+                  "duration": 7609,
                   "stdout": [
                     {
-                      "text": "Model: Pixel 4a\n"
-                    },
-                    {
-                      "text": "Serial: 0A101JEC213041\n"
-                    },
-                    {
-                      "text": "https://letcode.in/\n"
+                      "text": "480\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\webscraping-amazonprice-Amazon-Price-Drop-Notification\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "android/mobile.test.ts",
-          "line": 4,
+          "file": "webscraping/amazonprice.test.ts",
+          "line": 8,
           "column": 1
         }
       ]
