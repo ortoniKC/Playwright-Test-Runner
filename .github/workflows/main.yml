@@ -6,10 +6,7 @@ on:
 jobs:
   e2e-tests:
     runs-on: windows-latest # or macos-latest, ubuntu-latest
-    env:
-      EMAIL: ${{EMAIL}}
-      PASS:  ${{PASS}}
-
+    
     steps:
       - uses: actions/checkout@v2
 
@@ -19,6 +16,10 @@ jobs:
 
 
       - name: Install dependencies
+      - environmnent:
+          EMAIL: ${{EMAIL}}
+          PASS:  ${{PASS}}
+
         run: npm install
 
       - name: Run tests
