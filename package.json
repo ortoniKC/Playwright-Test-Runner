@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "npx playwright test",
-        "test-us": "npx playwright test --update-snapshots"
+        "test-us": "npx playwright test --update-snapshots",
+        "github-action": "npx playwright test --config=github.config.ts"
     },
     "keywords": [
         "playwright",
