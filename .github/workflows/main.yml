@@ -16,11 +16,10 @@ jobs:
 
 
       - name: Install dependencies
-      - environmnent:
-          EMAIL: ${{EMAIL}}
-          PASS:  ${{PASS}}
-
         run: npm install
 
       - name: Run tests
         run: npm run github-action
+        env:
+          EMAIL: ${{env.EMAIL}}
+          PASS: ${{env.PASS}}
