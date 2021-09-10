@@ -83,3 +83,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [InnerHTML vs InnerText vs TextContent | Playwright Tutorial - Part 48](https://youtu.be/MxAZiAbv45Q)
 
 [Playwright Android Automation | Playwright Tutorial Part - 49](https://youtu.be/Nte3PIffyYk)
+
+[Web Scrapping Using Playwright | Github Copilot | Playwright Tutorial Part 50](https://youtu.be/heGLd50G_zA)
+
+[Winston Logger | Playwright Tutorial Part 51](https://youtu.be/HtVJhuKv2zA)
