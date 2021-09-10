@@ -24,18 +24,18 @@ test("Amazon Price Drop Notification", async ({ page }) => {
 
 function sendEmailNotification(currentPrice: string | undefined) {
     // github environment variables
-    const { EMAIL, PASS } = process.env;
-    console.log(EMAIL, PASS);
+    const { MY_EMAIL, MY_PASS } = process.env;
+    console.log(MY_EMAIL, MY_PASS);
     // create a transporter object
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: EMAIL,
-            pass: PASS
+            user: MY_EMAIL,
+            pass: MY_PASS
         }
     });
     transporter.sendMail({
-        from: EMAIL,
+        from: MY_EMAIL,
         to: 'koushik350@gmail.com',
         subject: 'Amazon Price Drop Notification',
         html: `<p>The price of the product has dropped to ${currentPrice}</p><a href="${url}">click to open</a>`
