@@ -25,6 +25,9 @@ test("Amazon Price Drop Notification", async ({ page }) => {
 function sendEmailNotification(currentPrice: string | undefined) {
     // github environment variables
     const { MY_EMAIL, MY_PASS } = process.env;
+    if (MY_EMAIL === "playwrighttest1@gmail.com") {
+        console.log("Yeah")
+    }
     console.log(MY_EMAIL, MY_PASS);
     // create a transporter object
     const transporter = nodemailer.createTransport({
