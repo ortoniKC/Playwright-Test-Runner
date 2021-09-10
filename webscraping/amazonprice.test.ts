@@ -14,7 +14,6 @@ test("Amazon Price Drop Notification", async ({ page }) => {
     // remove the currency symbol and the comma from the price
     const currentPrice = price?.replace("₹", '').split(".")[0];
     console.log(currentPrice);
-
     // send the email using nodemailer
     sendEmailNotification(currentPrice);
     if (Number(currentPrice) < 400) {
@@ -25,9 +24,6 @@ test("Amazon Price Drop Notification", async ({ page }) => {
 function sendEmailNotification(currentPrice: string | undefined) {
     // github environment variables
     const { MY_EMAIL, MY_PASS } = process.env;
-    if (MY_EMAIL === "playwrighttest1@gmail.com") {
-        console.log("Yeah")
-    }
     console.log(MY_EMAIL, MY_PASS);
     // create a transporter object
     const transporter = nodemailer.createTransport({
