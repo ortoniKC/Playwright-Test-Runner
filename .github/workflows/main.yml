@@ -14,6 +14,10 @@ jobs:
 
       - uses: microsoft/playwright-github-action@v1
 
+      - env:
+          EMAIL: ${{EMAIL}}
+          PASS:  ${{PASS}}
+Ce
       - name: Install dependencies
         run: npm install
 
