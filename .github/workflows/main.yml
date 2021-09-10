@@ -6,6 +6,9 @@ on:
 jobs:
   e2e-tests:
     runs-on: windows-latest # or macos-latest, ubuntu-latest
+    env:
+      EMAIL: ${{EMAIL}}
+      PASS:  ${{PASS}}
 
     steps:
       - uses: actions/checkout@v2
@@ -14,9 +17,6 @@ jobs:
 
       - uses: microsoft/playwright-github-action@v1
 
-      - env:
-          EMAIL: ${{EMAIL}}
-          PASS:  ${{PASS}}
 
       - name: Install dependencies
         run: npm install
