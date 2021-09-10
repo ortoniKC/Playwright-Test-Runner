@@ -20,6 +20,6 @@ jobs:
 
       - name: Run tests
         run: npm run github-action
-         env:
+        env:
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
           MY_PASS: ${{ secrets.MY_PASS }}
