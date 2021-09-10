@@ -20,5 +20,6 @@ jobs:
 
       - name: Run tests
         run: npm run github-action
-          echo ${{ secrets.MY_EMAIL }}
-          echo ${{ secrets.MY_PASS }}
+         env:
+          MY_EMAIL: ${{ secrets.MY_EMAIL }}
+          MY_PASS: ${{ secrets.MY_PASS }}
