@@ -8,11 +8,17 @@ const config: PlaywrightTestConfig = {
         screenshot: "on",
         trace: "retain-on-failure",
         baseURL: "https://letcode.in",
-
+        // launchOptions: {
+        //     logger: {
+        //         isEnabled: (name, severity) => true,
+        //         log: (name, severity, message, args) => console.log(name, severity)
+        // }
+        // }
     },
+
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["amazonprice.test.ts"],
+    testMatch: ["playLogger.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
     ['experimental-allure-playwright']],

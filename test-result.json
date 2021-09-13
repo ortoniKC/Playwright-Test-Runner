@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "amazonprice.test.ts"
+          "playLogger.test.ts"
         ],
         "timeout": 30000
       }
@@ -51,13 +51,13 @@
   },
   "suites": [
     {
-      "title": "webscraping\\amazonprice.test.ts",
-      "file": "webscraping/amazonprice.test.ts",
+      "title": "logger\\playLogger.test.ts",
+      "file": "logger/playLogger.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Amazon Price Drop Notification",
+          "title": "Logger",
           "ok": true,
           "tests": [
             {
@@ -69,10 +69,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7609,
+                  "duration": 8789,
                   "stdout": [
                     {
-                      "text": "480\n"
+                      "text": "Failed to load resource: the server responded with a status of 404 ()\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
                     }
                   ],
                   "stderr": [],
@@ -81,7 +93,7 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\webscraping-amazonprice-Amazon-Price-Drop-Notification\\test-finished-1.png"
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\logger-playLogger-Logger\\test-finished-1.png"
                     }
                   ]
                 }
@@ -89,8 +101,8 @@
               "status": "expected"
             }
           ],
-          "file": "webscraping/amazonprice.test.ts",
-          "line": 8,
+          "file": "logger/playLogger.test.ts",
+          "line": 4,
           "column": 1
         }
       ]

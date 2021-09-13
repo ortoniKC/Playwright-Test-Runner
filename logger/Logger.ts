@@ -1,3 +1,4 @@
+"using strict";
 const winston = require('winston');
 
 const options = {

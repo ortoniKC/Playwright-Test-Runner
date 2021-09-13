@@ -6,7 +6,7 @@ test("Strict - Element handle", async ({ page }) => {
         strict: true
     });
     await btn?.hover()
-    await btn.click();
+    await btn?.click();
 })
 
 test.only("Locator API", async ({ page }) => {
