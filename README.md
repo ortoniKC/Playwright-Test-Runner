@@ -87,4 +87,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Web Scrapping Using Playwright | Github Copilot | Playwright Tutorial Part 50](https://youtu.be/heGLd50G_zA)
 
 [Winston Logger | Playwright Tutorial Part 51](https://youtu.be/HtVJhuKv2zA)
+
 [Playwright Logger | Read console logs | Playwright Tutorial - Part 52](https://youtu.be/KbZZpwH6eOI)
+
+[Playwright locator API In Detail | Playwright Tutorial - Part 53](https://youtu.be/cvLaBBfuYmA)

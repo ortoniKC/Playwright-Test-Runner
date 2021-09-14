@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "playLogger.test.ts"
+          "locatorIndetail.test.ts"
         ],
         "timeout": 30000
       }
@@ -51,13 +51,13 @@
   },
   "suites": [
     {
-      "title": "logger\\playLogger.test.ts",
-      "file": "logger/playLogger.test.ts",
+      "title": "locatorAPI\\locatorIndetail.test.ts",
+      "file": "locatorAPI/locatorIndetail.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Logger",
+          "title": "Locator in detail",
           "ok": true,
           "tests": [
             {
@@ -69,22 +69,13 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8789,
+                  "duration": 3078,
                   "stdout": [
                     {
-                      "text": "Failed to load resource: the server responded with a status of 404 ()\n"
+                      "text": "Sauce Labs Onesie\n"
                     },
                     {
-                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
-                    },
-                    {
-                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
-                    },
-                    {
-                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
-                    },
-                    {
-                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
+                      "text": "Sauce Labs Fleece Jacket\n"
                     }
                   ],
                   "stderr": [],
@@ -93,7 +84,7 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\logger-playLogger-Logger\\test-finished-1.png"
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\locatorAPI-locatorIndetail-Locator-in-detail\\test-finished-1.png"
                     }
                   ]
                 }
@@ -101,8 +92,8 @@
               "status": "expected"
             }
           ],
-          "file": "logger/playLogger.test.ts",
-          "line": 4,
+          "file": "locatorAPI/locatorIndetail.test.ts",
+          "line": 2,
           "column": 1
         }
       ]
