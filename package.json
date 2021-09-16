@@ -17,11 +17,11 @@
     "author": "Koushik (LetCode)",
     "license": "ISC",
     "devDependencies": {
-        "@playwright/test": "^1.14.0",
+        "@playwright/test": "^1.14.1",
         "@types/nodemailer": "^6.4.4",
         "experimental-allure-playwright": "0.0.3",
         "nodemailer": "^6.6.3",
-        "playwright": "^1.14.0",
+        "playwright": "^1.14.1",
         "ts-node": "10.0.0",
         "typescript": "4.3.2",
         "winston": "^3.3.3"

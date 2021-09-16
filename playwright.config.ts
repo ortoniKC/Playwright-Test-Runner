@@ -3,7 +3,7 @@ import { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
     use: {
-        headless: !true,
+        headless: true,
         browserName: "chromium",
         screenshot: "on",
         trace: "retain-on-failure",
@@ -18,9 +18,10 @@ const config: PlaywrightTestConfig = {
 
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["locatorIndetail.test.ts"],
+    testMatch: ["report.test.ts"],
     retries: 0,
-    reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
-    ['experimental-allure-playwright']],
+    reporter: "./customReport/myReporter.ts"
+    // reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
+    // ['experimental-allure-playwright']],
 }
 export default config;

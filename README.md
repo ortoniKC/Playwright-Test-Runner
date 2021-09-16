@@ -91,3 +91,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright Logger | Read console logs | Playwright Tutorial - Part 52](https://youtu.be/KbZZpwH6eOI)
 
 [Playwright locator API In Detail | Playwright Tutorial - Part 53](https://youtu.be/cvLaBBfuYmA)
+
+[Playwright Explicit wait| Playwright Tutorial Part 54]()
+
+[Playwright Custom Report | Playwright Tutorial Part 55](https://youtu.be/t-KsH5p60sk)

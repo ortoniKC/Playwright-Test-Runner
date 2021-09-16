@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 })
 
 // test.describe.serial.only("", () => { })
-test.describe.serial("Skip on Failure", () => {
+test.describe("Skip on Failure", () => {
 
     test("E2E test", async ({ headerPage, loginPage, commonPage, page }) => {
         await test.step("Login", async () => {
@@ -24,15 +24,14 @@ test.describe.serial("Skip on Failure", () => {
         })
 
         await test.step("Checkout", async () => {
-            await headerPage.clickLoginLink();
-            await headerPage.clickLoginLink();
-            expect(page.url()).toBe("https://letcode.in/signin")
-            await loginPage.enterUserName(data.email);
-            await loginPage.enterUserPassword(data.pass);
-            await loginPage.clickLoginBtn();
-            const toaster = await commonPage.toaster();
-            expect(await toaster?.textContent()).toContain("Welcome");
-            await headerPage.clickSignOutLink();
+            // await headerPage.clickLoginLink();
+            // expect(page.url()).toBe("https://letcode.in/signin")
+            // await loginPage.enterUserName(data.email);
+            // await loginPage.enterUserPassword(data.pass);
+            // await loginPage.clickLoginBtn();
+            // const toaster = await commonPage.toaster();
+            // expect(await toaster?.textContent()).toContain("Welcome");
+            // await headerPage.clickSignOutLink();
         })
     })
     // test("Login negative", async ({ headerPage, loginPage, commonPage, page }) => {
