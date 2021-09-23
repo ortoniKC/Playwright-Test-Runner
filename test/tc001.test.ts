@@ -1,7 +1,7 @@
-import CommonFunctions from "../page/common.page";
-import HeaderPage from "../page/Header.page";
-import LoginPage from "../page/Login.page";
-import * as data from "../data/login.cred.json";
+import CommonFunctions from "../../page/common.page";
+import HeaderPage from "../../page/Header.page";
+import LoginPage from "../../page/Login.page";
+import * as data from "../../data/login.cred.json";
 import { BrowserContext, expect, Page, test } from "@playwright/test";
 
 test.describe("TC001", () => {

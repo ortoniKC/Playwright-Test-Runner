@@ -95,3 +95,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright Explicit wait| Playwright Tutorial Part 54]()
 
 [Playwright Custom Report | Playwright Tutorial Part 55](https://youtu.be/t-KsH5p60sk)
+
+[Get Started With Playwright Framework | Playwright Tutorial Part 56](https://youtu.be/ELAp41NV13E)
+
+[Parallel Tests - Mouse Wheel Control | Playwright Tutorial Part 57](https://youtu.be/UXj0LTBff7Y)

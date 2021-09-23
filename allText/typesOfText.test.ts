@@ -1,6 +1,5 @@
 import { test } from "@playwright/test";
 
-
 test("Type of text", async ({ page }) => {
     await page.goto("http://127.0.0.1:5500/allText/index.html");
     await test.step("Inner HTML", async () => {
@@ -18,10 +17,4 @@ test("Type of text", async ({ page }) => {
         let txt = await page.locator("#attach").textContent();
         console.log('Text Content: ' + txt);
     })
-
-
-
-
-
-
 })

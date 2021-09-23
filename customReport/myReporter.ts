@@ -26,7 +26,7 @@ export default class MyReporter implements Reporter {
 
     }
 
-        (test: TestCase, result: TestResult, step: TestStep): void {
+    onStepEnd(test: TestCase, result: TestResult, step: TestStep): void {
         if (step.category === "test.step") {
             console.log("Test step started: " + step.title);
         }

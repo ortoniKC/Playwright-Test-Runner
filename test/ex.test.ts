@@ -1,5 +1,5 @@
 import { test, expect } from '../fixture/basefixture'
-import * as data from "../data/login.cred.json";
+import * as data from "../../data/login.cred.json";
 
 test.describe("TC001", () => {
 
