@@ -8,6 +8,9 @@ const config: PlaywrightTestConfig = {
         screenshot: "on",
         trace: "retain-on-failure",
         baseURL: "https://letcode.in",
+        // contextOptions: {
+        //     permissions: ["clipboard-read"]
+        // }
         // launchOptions: {
         //     logger: {
         //         isEnabled: (name, severity) => true,
@@ -18,10 +21,10 @@ const config: PlaywrightTestConfig = {
 
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["mousewheel.test.ts"],
+    testMatch: ["clip.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
-    // reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
-    // ['experimental-allure-playwright']],
+    reporter: [["dot"], ["json", { outputFile: "test-result.json" }],
+    ['experimental-allure-playwright']],
 }
 export default config;

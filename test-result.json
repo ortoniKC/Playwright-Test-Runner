@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "locatorIndetail.test.ts"
+          "clip.test.ts"
         ],
         "timeout": 30000
       }
@@ -51,14 +51,15 @@
   },
   "suites": [
     {
-      "title": "locatorAPI\\locatorIndetail.test.ts",
-      "file": "locatorAPI/locatorIndetail.test.ts",
+      "title": "clipboard\\clip.test.ts",
+      "file": "clipboard/clip.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Locator in detail",
+          "title": "Access clipboard",
           "ok": true,
+          "tags": [],
           "tests": [
             {
               "timeout": 30000,
@@ -69,22 +70,44 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3078,
+                  "duration": 5845,
                   "stdout": [
                     {
-                      "text": "Sauce Labs Onesie\n"
+                      "text": "From clipboard: Just because you can doesn't mean you should — clipboard.js\n"
                     },
                     {
-                      "text": "Sauce Labs Fleece Jacket\n"
+                      "text": "From clipboard URL: https://github.com/zenorocha/clipboard.js.git\n"
+                    },
+                    {
+                      "text": "Title from new tab: GitHub - zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 3kb gzipped\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Goto the https://clipboardjs.com/",
+                      "duration": 1101
+                    },
+                    {
+                      "title": "click to copy",
+                      "duration": 80
+                    },
+                    {
+                      "title": "access the clipboard",
+                      "duration": 2019
+                    }
+                  ],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\locatorAPI-locatorIndetail-Locator-in-detail\\test-finished-1.png"
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\clipboard-clip-Access-clipboard\\test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\clipboard-clip-Access-clipboard\\test-finished-2.png"
                     }
                   ]
                 }
@@ -92,9 +115,37 @@
               "status": "expected"
             }
           ],
-          "file": "locatorAPI/locatorIndetail.test.ts",
-          "line": 2,
+          "file": "clipboard/clip.test.ts",
+          "line": 4,
           "column": 1
+        },
+        {
+          "title": "Open url from clipboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "skipped",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "file": "clipboard/clip.test.ts",
+          "line": 23,
+          "column": 6
         }
       ]
     }
