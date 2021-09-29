@@ -21,7 +21,7 @@ const config: PlaywrightTestConfig = {
 
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["clip.test.ts"],
+    testMatch: ["blocker.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }],

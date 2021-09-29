@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "clip.test.ts"
+          "blocker.test.ts"
         ],
         "timeout": 30000
       }
@@ -51,13 +51,13 @@
   },
   "suites": [
     {
-      "title": "clipboard\\clip.test.ts",
-      "file": "clipboard/clip.test.ts",
+      "title": "network\\blocker.test.ts",
+      "file": "network/blocker.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Access clipboard",
+          "title": "Block images - Network Intercept",
           "ok": true,
           "tags": [],
           "tests": [
@@ -70,44 +70,15 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5845,
-                  "stdout": [
-                    {
-                      "text": "From clipboard: Just because you can doesn't mean you should — clipboard.js\n"
-                    },
-                    {
-                      "text": "From clipboard URL: https://github.com/zenorocha/clipboard.js.git\n"
-                    },
-                    {
-                      "text": "Title from new tab: GitHub - zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 3kb gzipped\n"
-                    }
-                  ],
+                  "duration": 10839,
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Goto the https://clipboardjs.com/",
-                      "duration": 1101
-                    },
-                    {
-                      "title": "click to copy",
-                      "duration": 80
-                    },
-                    {
-                      "title": "access the clipboard",
-                      "duration": 2019
-                    }
-                  ],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\clipboard-clip-Access-clipboard\\test-finished-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\clipboard-clip-Access-clipboard\\test-finished-2.png"
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\network-blocker-Block-images-Network-Intercept\\test-finished-1.png"
                     }
                   ]
                 }
@@ -115,37 +86,9 @@
               "status": "expected"
             }
           ],
-          "file": "clipboard/clip.test.ts",
-          "line": 4,
+          "file": "network/blocker.test.ts",
+          "line": 2,
           "column": 1
-        },
-        {
-          "title": "Open url from clipboard",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "skipped",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 0,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "file": "clipboard/clip.test.ts",
-          "line": 23,
-          "column": 6
         }
       ]
     }

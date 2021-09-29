@@ -101,3 +101,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Parallel Tests - Mouse Wheel Control | Playwright Tutorial Part 57](https://youtu.be/UXj0LTBff7Y)
 
 [Access Clipboard URL and Open in New Tab | Playwright Tutorial Part 58](https://youtu.be/r8O_myjoW98)
+
+[Network - Abort Request | Playwright Tutorial Part 59](https://youtu.be/jIEAtdVV1j4)
