@@ -103,3 +103,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Access Clipboard URL and Open in New Tab | Playwright Tutorial Part 58](https://youtu.be/r8O_myjoW98)
 
 [Network - Abort Request | Playwright Tutorial Part 59](https://youtu.be/jIEAtdVV1j4)
+
+[Click & Hold | Playwright Tutorial Part 60](https://youtu.be/0SruLQy2pgA)
