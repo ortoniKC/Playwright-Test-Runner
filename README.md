@@ -28,6 +28,48 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 ## Youtube Tutorial
 * Please follow the sequence to enhance your learning!
 
+[What is Playwright? | Playwright with Typescript & Jest - Part 1](https://youtu.be/zY-IoTYcbWs)
+
+[Playwright Jest Config & Launch Browser | Playwright - Part 2](https://youtu.be/DbdqflN3dJ4)
+
+[First Script - Auto Waits | Playwright - Part 3](https://youtu.be/9xEzNdG4XaQ)
+
+[Codeless Automation With PlayWright | Playwright - Part 4](https://youtu.be/gb43GiWwQKg)
+
+[Save Test Execution In Video | Playwright - Part 5](https://youtu.be/0125rwgsBP8)
+
+[How to upload files | Playwright - Part 6](https://youtu.be/e8jfjV71E6Q)
+
+[Handling different types of inputs | Playwright - Part 7](https://youtu.be/Slv5fuTrIZg)
+
+[Handling different types of alerts | Playwright - Part 8](https://youtu.be/RzBlwacFIl0)
+
+[Handling Select/DropDown | Playwright - Part 9](https://youtu.be/IubdSQFOdiU)
+
+[Window Handling | Playwright - Part 10](https://youtu.be/DyHQ3G442jY)
+
+[Frames | Playwright - Part 11](https://youtu.be/Vqm-8G81W8w)
+
+[Find Multiple Elements - part 12](https://youtu.be/54OwsiRa_eE)
+
+[How To Take Screenshot - part 13](https://youtu.be/G650JxukN1A)
+
+[How To Run In Local Browser | Playwright - Part 14](https://youtu.be/5LrRFHI81o4)
+
+[Drag and Drop | Playwright - Part 15](https://youtu.be/0wFkhkdcT8A)
+
+[Page Object Model | Playwright - Part 16](https://youtu.be/WSd6-X-n6P8)
+
+[POM Enhancement & JSON | Playwright - Part 17](https://youtu.be/00xGOpnOzds)
+
+[POM Enhancement & JSON | Playwright - Part 18](https://youtu.be/w05KGL8G0f4)
+
+[Jest Allure Report |  Playwright - Part 19](https://youtu.be/tjpSkaBq9c0)
+
+[Jest Allure Report |  Playwright - Part 20](https://youtu.be/xffrNccLIso)
+
+[Skip on failure |  Playwright - Part 21](https://youtu.be/4-IBKtbAxlg)
+
 [Playwright Test Runner | Playwright - Part 22](https://youtu.be/zyJHd-4_4Lk)
 
 [Playwright Test Runner | Commands | Playwright Tutorial - Part 23](https://youtu.be/_gnb7TAQ8sQ)

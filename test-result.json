@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "clickhold.test.ts"
+          "**/?(*.)@(spec|test).@(ts|js|mjs)"
         ],
         "timeout": 30000
       }
@@ -51,44 +51,88 @@
   },
   "suites": [
     {
-      "title": "clickAndHold\\clickhold.test.ts",
-      "file": "clickAndHold/clickhold.test.ts",
+      "title": "locatorAPI\\locatorIndetail.test.ts",
+      "file": "locatorAPI/locatorIndetail.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Click and hold",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "My awesome report suite",
+          "file": "locatorAPI/locatorIndetail.test.ts",
+          "line": 2,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
+              "title": "Locator in detail",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 12450,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\clickAndHold-clickhold-Click-and-hold\\test-finished-1.png"
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3343,
+                      "stdout": [
+                        {
+                          "text": "Sauce Labs Onesie\n"
+                        },
+                        {
+                          "text": "Sauce Labs Fleece Jacket\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Login",
+                          "duration": 1651
+                        },
+                        {
+                          "title": "Change price",
+                          "duration": 135
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\locatorAPI-locatorIndetail-My-awesome-report-suite-Locator-in-detail\\test-finished-1.png"
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "file": "locatorAPI/locatorIndetail.test.ts",
+              "line": 4,
+              "column": 5
+            },
+            {
+              "title": "My awesome test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "file": "locatorAPI/locatorIndetail.test.ts",
+              "line": 27,
+              "column": 5
             }
-          ],
-          "file": "clickAndHold/clickhold.test.ts",
-          "line": 2,
-          "column": 1
+          ]
         }
       ]
     }

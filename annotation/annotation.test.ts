@@ -1,14 +1,14 @@
 import { expect, test } from "@playwright/test";
 
-test.only("first test", async ({ page }) => {
-    // test.fail();
-    test.slow()
-    // test.setTimeout(10000)
-    console.log("first test running");
-    await page.goto("https://letcode.in")
-    // expect(await page.title()).toBe("LetCode with")
-    console.log("first test completed");
-});
+// test.only("first test", async ({ page }) => {
+//     // test.fail();
+//     test.slow()
+//     // test.setTimeout(10000)
+//     console.log("first test running");
+//     await page.goto("https://letcode.in")
+//     // expect(await page.title()).toBe("LetCode with")
+//     console.log("first test completed");
+// });
 test("second test", async ({ page }) => {
     console.log("second test running");
     await page.goto("https://playwright.dev")
