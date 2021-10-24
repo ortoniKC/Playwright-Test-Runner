@@ -7,7 +7,12 @@ const config: PlaywrightTestConfig = {
         browserName: "chromium",
         screenshot: "on",
         trace: "retain-on-failure",
-        baseURL: "https://letcode.in",
+        baseURL: "https://dev110556.service-now.com/api/now/table/incident",
+        extraHTTPHeaders: {
+ 
+            "Authorization": "Basic YWRtaW46VVptQlFNMW00ZGll"
+        }
+        // baseURL: "https://letcode.in",
         // contextOptions: {
         //     permissions: ["clipboard-read"]
         // }
@@ -21,7 +26,7 @@ const config: PlaywrightTestConfig = {
 
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    // testMatch: ["clickhold.test.ts"],
+    testMatch: ["apitest/service-now.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }],

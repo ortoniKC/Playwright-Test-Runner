@@ -1,24 +1,24 @@
-on:
-  push:
-    branches:
-    - main
+# on:
+#   push:
+#     branches:
+#     - main
 
-jobs:
-  e2e-tests:
-    runs-on: windows-latest # or macos-latest, ubuntu-latest
-    environment: cred
-    steps:
-      - uses: actions/checkout@v2
+# jobs:
+#   e2e-tests:
+#     runs-on: windows-latest # or macos-latest, ubuntu-latest
+#     environment: cred
+#     steps:
+#       - uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v1
+#       - uses: actions/setup-node@v1
 
-      - uses: microsoft/playwright-github-action@v1
+#       - uses: microsoft/playwright-github-action@v1
 
-      - name: Install dependencies
-        run: npm install
+#       - name: Install dependencies
+#         run: npm install
 
-      - name: Run tests
-        run: npm run github-action
-        env:
-          MY_EMAIL: ${{ secrets.MY_EMAIL }}
-          MY_PASS: ${{ secrets.MY_PASS }}
+#       - name: Run tests
+#         run: npm run github-action
+#         env:
+#           MY_EMAIL: ${{ secrets.MY_EMAIL }}
+#           MY_PASS: ${{ secrets.MY_PASS }}

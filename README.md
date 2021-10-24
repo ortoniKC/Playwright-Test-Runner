@@ -147,3 +147,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Network - Abort Request | Playwright Tutorial Part 59](https://youtu.be/jIEAtdVV1j4)
 
 [Click & Hold | Playwright Tutorial Part 60](https://youtu.be/0SruLQy2pgA)
+
+[Playwright API Testing | Playwright Tutorial Part 61](https://youtu.be/deEK0lHrC-w)

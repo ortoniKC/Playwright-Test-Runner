@@ -1,7 +1,7 @@
 {
     "name": "test-runner",
     "version": "1.0.0",
-    "description": "",
+    "description": "Playwright Awesome Tutorial",
     "main": "index.js",
     "scripts": {
         "report": "npx playwright test --reporter=html && npx playwright show-report",
@@ -10,14 +10,6 @@
         "test-us": "npx playwright test --update-snapshots",
         "github-action": "npx playwright test --config=github.config.ts"
     },
-    "keywords": [
-        "playwright",
-        "playwright tutorial",
-        "playwright test runner",
-        "letcode koushik"
-    ],
-    "author": "Koushik (LetCode)",
-    "license": "ISC",
     "devDependencies": {
         "@playwright/test": "^1.16.1",
         "@types/nodemailer": "^6.4.4",
@@ -28,5 +20,13 @@
         "ts-node": "10.0.0",
         "typescript": "4.3.2",
         "winston": "^3.3.3"
-    }
+    },
+    "keywords": [
+        "playwright",
+        "playwright tutorial",
+        "playwright test runner",
+        "letcode koushik"
+    ],
+    "author": "Koushik (LetCode)",
+    "license": "ISC"
 }
