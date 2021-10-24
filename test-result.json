@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "**/?(*.)@(spec|test).@(ts|js|mjs)"
+          "apitest/service-now.test.ts"
         ],
         "timeout": 30000
       }
@@ -46,93 +46,72 @@
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
+    "version": "1.16.1",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "locatorAPI\\locatorIndetail.test.ts",
-      "file": "locatorAPI/locatorIndetail.test.ts",
+      "title": "apitest\\service-now.test.ts",
+      "file": "apitest/service-now.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "My awesome report suite",
-          "file": "locatorAPI/locatorIndetail.test.ts",
-          "line": 2,
-          "column": 6,
-          "specs": [
+          "title": "Create an Incident",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Locator in detail",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 3343,
-                      "stdout": [
-                        {
-                          "text": "Sauce Labs Onesie\n"
-                        },
-                        {
-                          "text": "Sauce Labs Fleece Jacket\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Login",
-                          "duration": 1651
-                        },
-                        {
-                          "title": "Change price",
-                          "duration": 135
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\locatorAPI-locatorIndetail-My-awesome-report-suite-Locator-in-detail\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1672,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
                 }
               ],
-              "file": "locatorAPI/locatorIndetail.test.ts",
-              "line": 4,
-              "column": 5
-            },
-            {
-              "title": "My awesome test",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "file": "locatorAPI/locatorIndetail.test.ts",
-              "line": 27,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "file": "apitest/service-now.test.ts",
+          "line": 40,
+          "column": 6
+        },
+        {
+          "title": "Delete an Incident",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1266,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "apitest/service-now.test.ts",
+          "line": 65,
+          "column": 6
         }
       ]
     }

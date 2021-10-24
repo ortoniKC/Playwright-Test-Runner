@@ -2,3 +2,5 @@ node_modules
 test-results
 allure-results
 my-ext
+playwright-report
+test-result.json
