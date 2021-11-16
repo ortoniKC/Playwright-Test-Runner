@@ -149,3 +149,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Click & Hold | Playwright Tutorial Part 60](https://youtu.be/0SruLQy2pgA)
 
 [Playwright API Testing | Playwright Tutorial Part 61](https://youtu.be/deEK0lHrC-w)
+
+[See the moves - Slider | Playwright Tutorial Part 62](https://youtu.be/OKsPOxNYQWI)

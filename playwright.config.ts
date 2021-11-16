@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
         trace: "retain-on-failure",
         baseURL: "https://dev110556.service-now.com/api/now/table/incident",
         extraHTTPHeaders: {
- 
+
             "Authorization": "Basic YWRtaW46VVptQlFNMW00ZGll"
         }
         // baseURL: "https://letcode.in",
@@ -26,7 +26,7 @@ const config: PlaywrightTestConfig = {
 
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["apitest/service-now.test.ts"],
+    // testMatch: ["apitest/service-now.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [["dot"], ["json", { outputFile: "test-result.json" }],

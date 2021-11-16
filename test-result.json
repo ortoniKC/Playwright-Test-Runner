@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "apitest/service-now.test.ts"
+          "**/?(*.)@(spec|test).@(ts|js|mjs)"
         ],
         "timeout": 30000
       }
@@ -52,13 +52,13 @@
   },
   "suites": [
     {
-      "title": "apitest\\service-now.test.ts",
-      "file": "apitest/service-now.test.ts",
+      "title": "slider\\slider.test.ts",
+      "file": "slider/slider.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Create an Incident",
+          "title": "Slider Demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -71,82 +71,38 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1639,
+                  "duration": 21266,
                   "stdout": [
                     {
-                      "text": "{\n  result: {\n    parent: \u001b[32m''\u001b[39m,\n    made_sla: \u001b[32m'true'\u001b[39m,\n    caused_by: \u001b[32m''\u001b[39m,\n    watch_list: \u001b[32m''\u001b[39m,\n    upon_reject: \u001b[32m'cancel'\u001b[39m,\n    sys_updated_on: \u001b[32m'2021-10-24 05:49:15'\u001b[39m,\n    child_incidents: \u001b[32m'0'\u001b[39m,\n    hold_reason: \u001b[32m''\u001b[39m,\n    task_effective_number: \u001b[32m'INC0010045'\u001b[39m,\n    approval_history: \u001b[32m''\u001b[39m,\n    number: \u001b[32m'INC0010045'\u001b[39m,\n    resolved_by: \u001b[32m''\u001b[39m,\n    sys_updated_by: \u001b[32m'admin'\u001b[39m,\n    opened_by: {\n      link: \u001b[32m'https://dev110556.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441'\u001b[39m,\n      value: \u001b[32m'6816f79cc0a8016401c5a33be04be441'\u001b[39m\n    },\n    user_input: \u001b[32m''\u001b[39m,\n    sys_created_on: \u001b[32m'2021-10-24 05:49:15'\u001b[39m,\n    sys_domain: {\n      link: \u001b[32m'https://dev110556.service-now.com/api/now/table/sys_user_group/global'\u001b[39m,\n      value: \u001b[32m'global'\u001b[39m\n    },\n    state: \u001b[32m'1'\u001b[39m,\n    route_reason: \u001b[32m''\u001b[39m,\n    sys_created_by: \u001b[32m'admin'\u001b[39m,\n    knowledge: \u001b[32m'false'\u001b[39m,\n    order: \u001b[32m''\u001b[39m,\n    calendar_stc: \u001b[32m''\u001b[39m,\n    closed_at: \u001b[32m''\u001b[39m,\n    cmdb_ci: \u001b[32m''\u001b[39m,\n    delivery_plan: \u001b[32m''\u001b[39m,\n    contract: \u001b[32m''\u001b[39m,\n    impact: \u001b[32m'3'\u001b[39m,\n    active: \u001b[32m'true'\u001b[39m,\n    work_notes_list: \u001b[32m''\u001b[39m,\n    business_service: \u001b[32m''\u001b[39m,\n    priority: \u001b[32m'5'\u001b[39m,\n    sys_domain_path: \u001b[32m'/'\u001b[39m,\n    rfc: \u001b[32m''\u001b[39m,\n    time_worked: \u001b[32m''\u001b[39m,\n    expected_start: \u001b[32m''\u001b[39m,\n    opened_at: \u001b[32m'2021-10-24 05:49:15'\u001b[39m,\n    business_duration: \u001b[32m''\u001b[39m,\n    group_list: \u001b[32m''\u001b[39m,\n    work_end: \u001b[32m''\u001b[39m,\n    caller_id: \u001b[32m''\u001b[39m,\n    reopened_time: \u001b[32m''\u001b[39m,\n    resolved_at: \u001b[32m''\u001b[39m,\n    approval_set: \u001b[32m''\u001b[39m,\n    subcategory: \u001b[32m''\u001b[39m,\n    work_notes: \u001b[32m''\u001b[39m,\n    universal_request: \u001b[32m''\u001b[39m,\n    short_description: \u001b[32m'required ms office 365'\u001b[39m,\n    close_code: \u001b[32m''\u001b[39m,\n    correlation_display: \u001b[32m''\u001b[39m,\n    delivery_task: \u001b[32m''\u001b[39m,\n    work_start: \u001b[32m''\u001b[39m,\n    assignment_group: \u001b[32m''\u001b[39m,\n    additional_assignee_list: \u001b[32m''\u001b[39m,\n    business_stc: \u001b[32m''\u001b[39m,\n    description: \u001b[32m''\u001b[39m,\n    calendar_duration: \u001b[32m''\u001b[39m,\n    close_notes: \u001b[32m''\u001b[39m,\n    notify: \u001b[32m'1'\u001b[39m,\n    service_offering: \u001b[32m''\u001b[39m,\n    sys_class_name: \u001b[32m'incident'\u001b[39m,\n    closed_by: \u001b[32m''\u001b[39m,\n    follow_up: \u001b[32m''\u001b[39m,\n    parent_incident: \u001b[32m''\u001b[39m,\n    sys_id: \u001b[32m'263ef10f1bdb301033b4ed75604bcb37'\u001b[39m,\n    contact_type: \u001b[32m''\u001b[39m,\n    reopened_by: \u001b[32m''\u001b[39m,\n    incident_state: \u001b[32m'1'\u001b[39m,\n    urgency: \u001b[32m'3'\u001b[39m,\n    problem_id: \u001b[32m''\u001b[39m,\n    company: \u001b[32m''\u001b[39m,\n    reassignment_count: \u001b[32m'0'\u001b[39m,\n    activity_due: \u001b[32m''\u001b[39m,\n    assigned_to: \u001b[32m''\u001b[39m,\n    severity: \u001b[32m'3'\u001b[39m,\n    comments: \u001b[32m''\u001b[39m,\n    approval: \u001b[32m'not requested'\u001b[39m,\n    sla_due: \u001b[32m''\u001b[39m,\n    comments_and_work_notes: \u001b[32m''\u001b[39m,\n    due_date: \u001b[32m''\u001b[39m,\n    sys_mod_count: \u001b[32m'0'\u001b[39m,\n    reopen_count: \u001b[32m'0'\u001b[39m,\n    sys_tags: \u001b[32m''\u001b[39m,\n    escalation: \u001b[32m'0'\u001b[39m,\n    upon_approval: \u001b[32m'proceed'\u001b[39m,\n    correlation_id: \u001b[32m''\u001b[39m,\n    location: \u001b[32m''\u001b[39m,\n    category: \u001b[32m'hardware'\u001b[39m\n  }\n}\n"
+                      "text": "Initial text: 25000\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": []
+                  "steps": [
+                    {
+                      "title": "Goto demo site",
+                      "duration": 1618
+                    },
+                    {
+                      "title": "handle slider",
+                      "duration": 17685
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\slider-slider-Slider-Demo\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "apitest/service-now.test.ts",
-          "line": 7,
-          "column": 1
-        },
-        {
-          "title": "Get an Incident",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "skipped",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 0,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "file": "apitest/service-now.test.ts",
-          "line": 31,
-          "column": 6
-        },
-        {
-          "title": "Put(Modify) an Incident",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1343,
-                  "stdout": [
-                    {
-                      "text": "{\n  result: {\n    parent: \u001b[32m''\u001b[39m,\n    made_sla: \u001b[32m'true'\u001b[39m,\n    caused_by: \u001b[32m''\u001b[39m,\n    watch_list: \u001b[32m''\u001b[39m,\n    upon_reject: \u001b[32m'cancel'\u001b[39m,\n    sys_updated_on: \u001b[32m'2021-10-24 05:49:16'\u001b[39m,\n    child_incidents: \u001b[32m'0'\u001b[39m,\n    hold_reason: \u001b[32m''\u001b[39m,\n    task_effective_number: \u001b[32m'INC0010045'\u001b[39m,\n    approval_history: \u001b[32m''\u001b[39m,\n    number: \u001b[32m'INC0010045'\u001b[39m,\n    resolved_by: \u001b[32m''\u001b[39m,\n    sys_updated_by: \u001b[32m'admin'\u001b[39m,\n    opened_by: {\n      link: \u001b[32m'https://dev110556.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441'\u001b[39m,\n      value: \u001b[32m'6816f79cc0a8016401c5a33be04be441'\u001b[39m\n    },\n    user_input: \u001b[32m''\u001b[39m,\n    sys_created_on: \u001b[32m'2021-10-24 05:49:15'\u001b[39m,\n    sys_domain: {\n      link: \u001b[32m'https://dev110556.service-now.com/api/now/table/sys_user_group/global'\u001b[39m,\n      value: \u001b[32m'global'\u001b[39m\n    },\n    state: \u001b[32m'1'\u001b[39m,\n    route_reason: \u001b[32m''\u001b[39m,\n    sys_created_by: \u001b[32m'admin'\u001b[39m,\n    knowledge: \u001b[32m'false'\u001b[39m,\n    order: \u001b[32m''\u001b[39m,\n    calendar_stc: \u001b[32m''\u001b[39m,\n    closed_at: \u001b[32m''\u001b[39m,\n    cmdb_ci: \u001b[32m''\u001b[39m,\n    delivery_plan: \u001b[32m''\u001b[39m,\n    contract: \u001b[32m''\u001b[39m,\n    impact: \u001b[32m'3'\u001b[39m,\n    active: \u001b[32m'true'\u001b[39m,\n    work_notes_list: \u001b[32m''\u001b[39m,\n    business_service: \u001b[32m''\u001b[39m,\n    priority: \u001b[32m'5'\u001b[39m,\n    sys_domain_path: \u001b[32m'/'\u001b[39m,\n    rfc: \u001b[32m''\u001b[39m,\n    time_worked: \u001b[32m''\u001b[39m,\n    expected_start: \u001b[32m''\u001b[39m,\n    opened_at: \u001b[32m'2021-10-24 05:49:15'\u001b[39m,\n    business_duration: \u001b[32m''\u001b[39m,\n    group_list: \u001b[32m''\u001b[39m,\n    work_end: \u001b[32m''\u001b[39m,\n    caller_id: \u001b[32m''\u001b[39m,\n    reopened_time: \u001b[32m''\u001b[39m,\n    resolved_at: \u001b[32m''\u001b[39m,\n    approval_set: \u001b[32m''\u001b[39m,\n    subcategory: \u001b[32m''\u001b[39m,\n    work_notes: \u001b[32m''\u001b[39m,\n    universal_request: \u001b[32m''\u001b[39m,\n    short_description: \u001b[32m'Very boring tutorial'\u001b[39m,\n    close_code: \u001b[32m''\u001b[39m,\n    correlation_display: \u001b[32m''\u001b[39m,\n    delivery_task: \u001b[32m''\u001b[39m,\n    work_start: \u001b[32m''\u001b[39m,\n    assignment_group: \u001b[32m''\u001b[39m,\n    additional_assignee_list: \u001b[32m''\u001b[39m,\n    business_stc: \u001b[32m''\u001b[39m,\n    description: \u001b[32m''\u001b[39m,\n    calendar_duration: \u001b[32m''\u001b[39m,\n    close_notes: \u001b[32m''\u001b[39m,\n    notify: \u001b[32m'1'\u001b[39m,\n    service_offering: \u001b[32m''\u001b[39m,\n    sys_class_name: \u001b[32m'incident'\u001b[39m,\n    closed_by: \u001b[32m''\u001b[39m,\n    follow_up: \u001b[32m''\u001b[39m,\n    parent_incident: \u001b[32m''\u001b[39m,\n    sys_id: \u001b[32m'263ef10f1bdb301033b4ed75604bcb37'\u001b[39m,\n    contact_type: \u001b[32m''\u001b[39m,\n    reopened_by: \u001b[32m''\u001b[39m,\n    incident_state: \u001b[32m'1'\u001b[39m,\n    urgency: \u001b[32m'3'\u001b[39m,\n    problem_id: \u001b[32m''\u001b[39m,\n    company: \u001b[32m''\u001b[39m,\n    reassignment_count: \u001b[32m'0'\u001b[39m,\n    activity_due: \u001b[32m''\u001b[39m,\n    assigned_to: \u001b[32m''\u001b[39m,\n    severity: \u001b[32m'3'\u001b[39m,\n    comments: \u001b[32m''\u001b[39m,\n    approval: \u001b[32m'not requested'\u001b[39m,\n    sla_due: \u001b[32m''\u001b[39m,\n    comments_and_work_notes: \u001b[32m''\u001b[39m,\n    due_date: \u001b[32m''\u001b[39m,\n    sys_mod_count: \u001b[32m'1'\u001b[39m,\n    reopen_count: \u001b[32m'0'\u001b[39m,\n    sys_tags: \u001b[32m''\u001b[39m,\n    escalation: \u001b[32m'0'\u001b[39m,\n    upon_approval: \u001b[32m'proceed'\u001b[39m,\n    correlation_id: \u001b[32m''\u001b[39m,\n    location: \u001b[32m''\u001b[39m,\n    category: \u001b[32m'software'\u001b[39m\n  }\n}\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "file": "apitest/service-now.test.ts",
-          "line": 47,
+          "file": "slider/slider.test.ts",
+          "line": 3,
           "column": 1
         }
       ]
