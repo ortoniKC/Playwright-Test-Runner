@@ -46,20 +46,20 @@
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.16.1",
+    "version": "1.16.3",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "slider\\slider.test.ts",
-      "file": "slider/slider.test.ts",
+      "title": "electron\\electron.test.ts",
+      "file": "electron/electron.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Slider Demo",
-          "ok": true,
+          "title": "Electron app automation demo",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -70,38 +70,26 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 21266,
-                  "stdout": [
-                    {
-                      "text": "Initial text: 25000\n"
-                    }
-                  ],
+                  "status": "failed",
+                  "duration": 31,
+                  "error": {
+                    "message": "electron.launch: Failed to launch: Error: spawn ./Prices.exe ENOENT",
+                    "stack": "electron.launch: Failed to launch: Error: spawn ./Prices.exe ENOENT\n    at Y:\\my-code-base\\Playwright-Test-Runner\\electron\\electron.test.ts:5:41\n    at FixtureRunner.resolveParametersAndRunHookOrTest (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\fixtures.js:306:12)\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\workerRunner.js:478:7)"
+                  },
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Goto demo site",
-                      "duration": 1618
-                    },
-                    {
-                      "title": "handle slider",
-                      "duration": 17685
-                    }
-                  ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\slider-slider-Slider-Demo\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": [],
+                  "errorLocation": {
+                    "column": 41,
+                    "line": 5
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "file": "slider/slider.test.ts",
+          "file": "electron/electron.test.ts",
           "line": 3,
           "column": 1
         }
