@@ -2,7 +2,7 @@
   "config": {
     "forbidOnly": false,
     "globalSetup": null,
-    "globalTeardown": null,
+    "globalTeardown": "Y:\\my-code-base\\Playwright-Test-Runner\\helper\\globalsetup.ts",
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
@@ -17,7 +17,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "**/?(*.)@(spec|test).@(ts|js|mjs)"
+          "reportDemo/*.test.ts"
         ],
         "timeout": 30000
       }
@@ -34,8 +34,10 @@
         }
       ],
       [
-        "Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
-        null
+        "html",
+        {
+          "open": "never"
+        }
       ]
     ],
     "reportSlowTests": {
@@ -46,20 +48,21 @@
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.16.3",
+    "version": "1.17.0",
     "workers": 4,
-    "webServer": null
+    "webServer": null,
+    "__testGroupsCount": 3
   },
   "suites": [
     {
-      "title": "electron\\electron.test.ts",
-      "file": "electron/electron.test.ts",
+      "title": "reportDemo\\clip.test.ts",
+      "file": "reportDemo/clip.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Electron app automation demo",
-          "ok": false,
+          "title": "Access clipboard",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -70,27 +73,345 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 31,
-                  "error": {
-                    "message": "electron.launch: Failed to launch: Error: spawn ./Prices.exe ENOENT",
-                    "stack": "electron.launch: Failed to launch: Error: spawn ./Prices.exe ENOENT\n    at Y:\\my-code-base\\Playwright-Test-Runner\\electron\\electron.test.ts:5:41\n    at FixtureRunner.resolveParametersAndRunHookOrTest (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\fixtures.js:306:12)\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\workerRunner.js:478:7)"
-                  },
+                  "status": "passed",
+                  "duration": 6834,
+                  "stdout": [
+                    {
+                      "text": "From clipboard: Just because you can doesn't mean you should — clipboard.js\n"
+                    },
+                    {
+                      "text": "From clipboard URL: https://github.com/zenorocha/clipboard.js.git\n"
+                    },
+                    {
+                      "text": "Title from new tab: GitHub - zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 3kb gzipped\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Goto the https://clipboardjs.com/",
+                      "duration": 1496
+                    },
+                    {
+                      "title": "click to copy",
+                      "duration": 99
+                    },
+                    {
+                      "title": "access the clipboard",
+                      "duration": 2767
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Access-clipboard\\af0205c1293c1074558466dc6062c363.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Access-clipboard\\0a133162847843d4d100a1716b7b3fbc.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Access-clipboard\\trace.zip"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Access-clipboard\\test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Access-clipboard\\test-finished-2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "reportDemo/clip.test.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Open url from clipboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 3362,
+                  "stdout": [
+                    {
+                      "text": "GitHub - zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 3kb gzipped\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Open-url-from-clipboard\\fccc3f41dc8140536d7f381caf98d8b6.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Open-url-from-clipboard\\trace.zip"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-clip-Open-url-from-clipboard\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "reportDemo/clip.test.ts",
+          "line": 23,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "reportDemo\\github.test.ts",
+      "file": "reportDemo/github.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "Signin into Git",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 3962,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [],
-                  "errorLocation": {
-                    "column": 41,
-                    "line": 5
-                  }
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-github-Signin-into-Git\\e10b487f19609a98258573ab4fc78ad6.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-github-Signin-into-Git\\trace.zip"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-github-Signin-into-Git\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "file": "electron/electron.test.ts",
-          "line": 3,
+          "file": "reportDemo/github.test.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "In depth",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 9364,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-github-In-depth\\9264fb52e1a5715cc8d784cb284246b0.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-github-In-depth\\trace.zip"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\reportDemo-github-In-depth\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "reportDemo/github.test.ts",
+          "line": 16,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "reportDemo\\service-now.test.ts",
+      "file": "reportDemo/service-now.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "Create an Incident",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1852,
+                  "stdout": [
+                    {
+                      "text": "{\n  result: {\n    parent: \u001b[32m''\u001b[39m,\n    made_sla: \u001b[32m'true'\u001b[39m,\n    caused_by: \u001b[32m''\u001b[39m,\n    watch_list: \u001b[32m''\u001b[39m,\n    upon_reject: \u001b[32m'cancel'\u001b[39m,\n    sys_updated_on: \u001b[32m'2021-12-06 17:09:34'\u001b[39m,\n    child_incidents: \u001b[32m'0'\u001b[39m,\n    hold_reason: \u001b[32m''\u001b[39m,\n    task_effective_number: \u001b[32m'INC0010019'\u001b[39m,\n    approval_history: \u001b[32m''\u001b[39m,\n    number: \u001b[32m'INC0010019'\u001b[39m,\n    resolved_by: \u001b[32m''\u001b[39m,\n    sys_updated_by: \u001b[32m'admin'\u001b[39m,\n    opened_by: {\n      link: \u001b[32m'https://dev107189.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441'\u001b[39m,\n      value: \u001b[32m'6816f79cc0a8016401c5a33be04be441'\u001b[39m\n    },\n    user_input: \u001b[32m''\u001b[39m,\n    sys_created_on: \u001b[32m'2021-12-06 17:09:34'\u001b[39m,\n    sys_domain: {\n      link: \u001b[32m'https://dev107189.service-now.com/api/now/table/sys_user_group/global'\u001b[39m,\n      value: \u001b[32m'global'\u001b[39m\n    },\n    state: \u001b[32m'1'\u001b[39m,\n    route_reason: \u001b[32m''\u001b[39m,\n    sys_created_by: \u001b[32m'admin'\u001b[39m,\n    knowledge: \u001b[32m'false'\u001b[39m,\n    order: \u001b[32m''\u001b[39m,\n    calendar_stc: \u001b[32m''\u001b[39m,\n    closed_at: \u001b[32m''\u001b[39m,\n    cmdb_ci: \u001b[32m''\u001b[39m,\n    delivery_plan: \u001b[32m''\u001b[39m,\n    contract: \u001b[32m''\u001b[39m,\n    impact: \u001b[32m'3'\u001b[39m,\n    active: \u001b[32m'true'\u001b[39m,\n    work_notes_list: \u001b[32m''\u001b[39m,\n    business_service: \u001b[32m''\u001b[39m,\n    priority: \u001b[32m'5'\u001b[39m,\n    sys_domain_path: \u001b[32m'/'\u001b[39m,\n    rfc: \u001b[32m''\u001b[39m,\n    time_worked: \u001b[32m''\u001b[39m,\n    expected_start: \u001b[32m''\u001b[39m,\n    opened_at: \u001b[32m'2021-12-06 17:09:34'\u001b[39m,\n    business_duration: \u001b[32m''\u001b[39m,\n    group_list: \u001b[32m''\u001b[39m,\n    work_end: \u001b[32m''\u001b[39m,\n    caller_id: \u001b[32m''\u001b[39m,\n    reopened_time: \u001b[32m''\u001b[39m,\n    resolved_at: \u001b[32m''\u001b[39m,\n    approval_set: \u001b[32m''\u001b[39m,\n    subcategory: \u001b[32m''\u001b[39m,\n    work_notes: \u001b[32m''\u001b[39m,\n    universal_request: \u001b[32m''\u001b[39m,\n    short_description: \u001b[32m'required ms office 365'\u001b[39m,\n    close_code: \u001b[32m''\u001b[39m,\n    correlation_display: \u001b[32m''\u001b[39m,\n    delivery_task: \u001b[32m''\u001b[39m,\n    work_start: \u001b[32m''\u001b[39m,\n    assignment_group: \u001b[32m''\u001b[39m,\n    additional_assignee_list: \u001b[32m''\u001b[39m,\n    business_stc: \u001b[32m''\u001b[39m,\n    description: \u001b[32m''\u001b[39m,\n    calendar_duration: \u001b[32m''\u001b[39m,\n    close_notes: \u001b[32m''\u001b[39m,\n    notify: \u001b[32m'1'\u001b[39m,\n    service_offering: \u001b[32m''\u001b[39m,\n    sys_class_name: \u001b[32m'incident'\u001b[39m,\n    closed_by: \u001b[32m''\u001b[39m,\n    follow_up: \u001b[32m''\u001b[39m,\n    parent_incident: \u001b[32m''\u001b[39m,\n    sys_id: \u001b[32m'2746f9051b500110d56bea03b24bcba5'\u001b[39m,\n    contact_type: \u001b[32m''\u001b[39m,\n    reopened_by: \u001b[32m''\u001b[39m,\n    incident_state: \u001b[32m'1'\u001b[39m,\n    urgency: \u001b[32m'3'\u001b[39m,\n    problem_id: \u001b[32m''\u001b[39m,\n    company: \u001b[32m''\u001b[39m,\n    reassignment_count: \u001b[32m'0'\u001b[39m,\n    activity_due: \u001b[32m''\u001b[39m,\n    assigned_to: \u001b[32m''\u001b[39m,\n    severity: \u001b[32m'3'\u001b[39m,\n    comments: \u001b[32m''\u001b[39m,\n    approval: \u001b[32m'not requested'\u001b[39m,\n    sla_due: \u001b[32m''\u001b[39m,\n    comments_and_work_notes: \u001b[32m''\u001b[39m,\n    due_date: \u001b[32m''\u001b[39m,\n    sys_mod_count: \u001b[32m'0'\u001b[39m,\n    reopen_count: \u001b[32m'0'\u001b[39m,\n    sys_tags: \u001b[32m''\u001b[39m,\n    escalation: \u001b[32m'0'\u001b[39m,\n    upon_approval: \u001b[32m'proceed'\u001b[39m,\n    correlation_id: \u001b[32m''\u001b[39m,\n    location: \u001b[32m''\u001b[39m,\n    category: \u001b[32m'hardware'\u001b[39m\n  }\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "reportDemo/service-now.test.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Get an Incident",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1215,
+                  "stdout": [
+                    {
+                      "text": "{\n  result: [\n    {\n      short_description: \u001b[32m'required ms office 365'\u001b[39m,\n      category: \u001b[32m'hardware'\u001b[39m\n    }\n  ]\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "reportDemo/service-now.test.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "Put(Modify) an Incident",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1275,
+                  "stdout": [
+                    {
+                      "text": "{\n  result: {\n    parent: \u001b[32m''\u001b[39m,\n    made_sla: \u001b[32m'true'\u001b[39m,\n    caused_by: \u001b[32m''\u001b[39m,\n    watch_list: \u001b[32m''\u001b[39m,\n    upon_reject: \u001b[32m'cancel'\u001b[39m,\n    sys_updated_on: \u001b[32m'2021-12-06 17:09:37'\u001b[39m,\n    child_incidents: \u001b[32m'0'\u001b[39m,\n    hold_reason: \u001b[32m''\u001b[39m,\n    task_effective_number: \u001b[32m'INC0010019'\u001b[39m,\n    approval_history: \u001b[32m''\u001b[39m,\n    number: \u001b[32m'INC0010019'\u001b[39m,\n    resolved_by: \u001b[32m''\u001b[39m,\n    sys_updated_by: \u001b[32m'admin'\u001b[39m,\n    opened_by: {\n      link: \u001b[32m'https://dev107189.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441'\u001b[39m,\n      value: \u001b[32m'6816f79cc0a8016401c5a33be04be441'\u001b[39m\n    },\n    user_input: \u001b[32m''\u001b[39m,\n    sys_created_on: \u001b[32m'2021-12-06 17:09:34'\u001b[39m,\n    sys_domain: {\n      link: \u001b[32m'https://dev107189.service-now.com/api/now/table/sys_user_group/global'\u001b[39m,\n      value: \u001b[32m'global'\u001b[39m\n    },\n    state: \u001b[32m'1'\u001b[39m,\n    route_reason: \u001b[32m''\u001b[39m,\n    sys_created_by: \u001b[32m'admin'\u001b[39m,\n    knowledge: \u001b[32m'false'\u001b[39m,\n    order: \u001b[32m''\u001b[39m,\n    calendar_stc: \u001b[32m''\u001b[39m,\n    closed_at: \u001b[32m''\u001b[39m,\n    cmdb_ci: \u001b[32m''\u001b[39m,\n    delivery_plan: \u001b[32m''\u001b[39m,\n    contract: \u001b[32m''\u001b[39m,\n    impact: \u001b[32m'3'\u001b[39m,\n    active: \u001b[32m'true'\u001b[39m,\n    work_notes_list: \u001b[32m''\u001b[39m,\n    business_service: \u001b[32m''\u001b[39m,\n    priority: \u001b[32m'5'\u001b[39m,\n    sys_domain_path: \u001b[32m'/'\u001b[39m,\n    rfc: \u001b[32m''\u001b[39m,\n    time_worked: \u001b[32m''\u001b[39m,\n    expected_start: \u001b[32m''\u001b[39m,\n    opened_at: \u001b[32m'2021-12-06 17:09:34'\u001b[39m,\n    business_duration: \u001b[32m''\u001b[39m,\n    group_list: \u001b[32m''\u001b[39m,\n    work_end: \u001b[32m''\u001b[39m,\n    caller_id: \u001b[32m''\u001b[39m,\n    reopened_time: \u001b[32m''\u001b[39m,\n    resolved_at: \u001b[32m''\u001b[39m,\n    approval_set: \u001b[32m''\u001b[39m,\n    subcategory: \u001b[32m''\u001b[39m,\n    work_notes: \u001b[32m''\u001b[39m,\n    universal_request: \u001b[32m''\u001b[39m,\n    short_description: \u001b[32m'Very boring tutorial'\u001b[39m,\n    close_code: \u001b[32m''\u001b[39m,\n    correlation_display: \u001b[32m''\u001b[39m,\n    delivery_task: \u001b[32m''\u001b[39m,\n    work_start: \u001b[32m''\u001b[39m,\n    assignment_group: \u001b[32m''\u001b[39m,\n    additional_assignee_list: \u001b[32m''\u001b[39m,\n    business_stc: \u001b[32m''\u001b[39m,\n    description: \u001b[32m''\u001b[39m,\n    calendar_duration: \u001b[32m''\u001b[39m,\n    close_notes: \u001b[32m''\u001b[39m,\n    notify: \u001b[32m'1'\u001b[39m,\n    service_offering: \u001b[32m''\u001b[39m,\n    sys_class_name: \u001b[32m'incident'\u001b[39m,\n    closed_by: \u001b[32m''\u001b[39m,\n    follow_up: \u001b[32m''\u001b[39m,\n    parent_incident: \u001b[32m''\u001b[39m,\n    sys_id: \u001b[32m'2746f9051b500110d56bea03b24bcba5'\u001b[39m,\n    contact_type: \u001b[32m''\u001b[39m,\n    reopened_by: \u001b[32m''\u001b[39m,\n    incident_state: \u001b[32m'1'\u001b[39m,\n    urgency: \u001b[32m'3'\u001b[39m,\n    problem_id: \u001b[32m''\u001b[39m,\n    company: \u001b[32m''\u001b[39m,\n    reassignment_count: \u001b[32m'0'\u001b[39m,\n    activity_due: \u001b[32m''\u001b[39m,\n    assigned_to: \u001b[32m''\u001b[39m,\n    severity: \u001b[32m'3'\u001b[39m,\n    comments: \u001b[32m''\u001b[39m,\n    approval: \u001b[32m'not requested'\u001b[39m,\n    sla_due: \u001b[32m''\u001b[39m,\n    comments_and_work_notes: \u001b[32m''\u001b[39m,\n    due_date: \u001b[32m''\u001b[39m,\n    sys_mod_count: \u001b[32m'1'\u001b[39m,\n    reopen_count: \u001b[32m'0'\u001b[39m,\n    sys_tags: \u001b[32m''\u001b[39m,\n    escalation: \u001b[32m'0'\u001b[39m,\n    upon_approval: \u001b[32m'proceed'\u001b[39m,\n    correlation_id: \u001b[32m''\u001b[39m,\n    location: \u001b[32m''\u001b[39m,\n    category: \u001b[32m'software'\u001b[39m\n  }\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "reportDemo/service-now.test.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "Delete an Incident",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1359,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "reportDemo/service-now.test.ts",
+          "line": 60,
           "column": 1
         }
       ]
