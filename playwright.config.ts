@@ -8,7 +8,8 @@ const config: PlaywrightTestConfig = {
         screenshot: "on",
         video: "on",
         trace: "on",
-        baseURL: "https://dev107189.service-now.com/api/now/table/incident",
+        baseURL: "https://www.letcode.in",
+        // baseURL: "https://dev107189.service-now.com/api/now/table/incident",
         extraHTTPHeaders: {
             "Authorization": "Basic YWRtaW46U0NxN2pDb2tDbFI4"
         }
@@ -25,7 +26,7 @@ const config: PlaywrightTestConfig = {
     },
     // timeout: 10000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["reportDemo/*.test.ts"],
+    // testMatch: ["reportDemo/*.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [

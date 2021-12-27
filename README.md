@@ -153,3 +153,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [See the moves - Slider | Playwright Tutorial Part 62](https://youtu.be/OKsPOxNYQWI)
 
 [Zip Report | Global TearDown | Playwright Tutorial Part 63](https://youtu.be/vMTBAbaLaf4)
+
+[New Frame Locator Functions | Playwright Tutorial Part 64](https://youtu.be/8P72y8ZNmVY)
