@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 test("Basic UI verification", async ({ page }) => {
 
     // isDisabled()?
-    await page.goto("https://letcode.in/edit_");
+    await page.goto("https://letcode.in/edit");
     expect(await page.isDisabled("#noEdit")).toBe(false);
 
     // isEditable()?
@@ -31,4 +31,16 @@ test("Basic UI verification", async ({ page }) => {
         await checkBox.uncheck();
     }
     else { throw new Error("Elementnd"); }
+})
+
+test("color", async ({ page }) => {
+    await page.goto("https://letcode.in/buttons");
+    const btn = page.locator("#home");
+    const color = await btn.evaluate((ele) => {
+        return window.getComputedStyle(ele).getPropertyValue("background-color")
+    });
+    console.log(color);
+    expect(color).toBe("rgb(250, 124, 145)");
+
+
 })
