@@ -6,8 +6,8 @@ const config: PlaywrightTestConfig = {
         headless: !true,
         browserName: "chromium",
         screenshot: "on",
-        video: "on",
-        trace: "on",
+        // video: "on",
+        // trace: "on",
         baseURL: "https://www.letcode.in",
         // baseURL: "https://dev107189.service-now.com/api/now/table/incident",
         extraHTTPHeaders: {
@@ -24,9 +24,9 @@ const config: PlaywrightTestConfig = {
         // }
         // }
     },
-    // timeout: 10000,
+    timeout: 10 * 600000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    // testMatch: ["reportDemo/*.test.ts"],
+    // testMatch: ["justdial.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [
@@ -36,6 +36,6 @@ const config: PlaywrightTestConfig = {
             open: "never"
         }] // -> HTML
     ],
-    globalTeardown: './helper/globalsetup.ts'
+    // globalTeardown: './helper/globalsetup.ts'
 }
 export default config;
