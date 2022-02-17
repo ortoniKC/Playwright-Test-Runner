@@ -24,9 +24,9 @@ const config: PlaywrightTestConfig = {
         // }
         // }
     },
-    timeout: 10 * 600000,
+    // timeout: 60000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    // testMatch: ["justdial.test.ts"],
+    // testMatch: ["customWaits\\waitForTextChange.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [

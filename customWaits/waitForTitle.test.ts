@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("Wait for an alert", async ({ page }) => {
+test("Wait for title change", async ({ page }) => {
 
     await test.step("Goto to Flipkart", async () => {
         await page.goto("https://www.flipkart.com/")
