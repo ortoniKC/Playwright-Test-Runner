@@ -159,3 +159,7 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [How To Get CSS Value | Playwright Tutorial Part 65](https://youtu.be/eI_AaU4kJXU)
 
 [Tesseract JS | Extract Text From Image | Playwright Tutorial Part 66](https://youtu.be/9kqEYQ-Pc-8)
+
+[Playwright is a game changer | Playwright Tutorial part - 67](https://youtu.be/EWXW2z0U3OQ)
+
+[How to download file & attach to report | Playwright Tutorial part - 68](https://youtu.be/xQxan2SlnKA)

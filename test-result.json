@@ -10,14 +10,14 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "Y:/my-code-base/Playwright-Test-Runner/test-results",
+        "outputDir": "y:/my-code-base/Playwright-Test-Runner/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "",
-        "testDir": "Y:/my-code-base/Playwright-Test-Runner",
+        "testDir": "y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "**/?(*.)@(spec|test).@(ts|js|mjs)"
+          "**/?(*.)@(spec|test).*"
         ],
         "timeout": 30000
       }
@@ -44,25 +44,25 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "Y:/my-code-base/Playwright-Test-Runner",
+    "rootDir": "y:/my-code-base/Playwright-Test-Runner",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.17.0",
+    "version": "1.19.1",
     "workers": 4,
     "webServer": null,
     "__testGroupsCount": 1
   },
   "suites": [
     {
-      "title": "customWaits\\waitForTitle.test.ts",
-      "file": "customWaits/waitForTitle.test.ts",
+      "title": "downloads\\download.test.ts",
+      "file": "downloads/download.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Wait for title change",
-          "ok": false,
+          "title": "Download file",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -73,46 +73,43 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31087,
-                  "error": {
-                    "message": "Pending operations:\n  - page.click at customWaits\\waitForTitle.test.ts:9:20\n\npage.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"button:has-text('✕')\"\n============================================================",
-                    "stack": "Pending operations:\n  - page.click at customWaits\\waitForTitle.test.ts:9:20\n\npage.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"button:has-text('✕')\"\n============================================================\n    at Y:\\my-code-base\\Playwright-Test-Runner\\customWaits\\waitForTitle.test.ts:9:20\n    at TestTypeImpl._step (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\testType.js:214:13)\n    at Function.step (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\transform.js:133:12)\n    at Y:\\my-code-base\\Playwright-Test-Runner\\customWaits\\waitForTitle.test.ts:8:16\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\workerRunner.js:499:7)"
-                  },
+                  "status": "passed",
+                  "duration": 9444,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Goto to Flipkart",
-                      "duration": 2235
+                      "title": "Goto the application",
+                      "duration": 1463
                     },
                     {
-                      "title": "Close the login pop up",
-                      "duration": 27442,
-                      "error": {
-                        "message": "page.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"button:has-text('✕')\"\n============================================================",
-                        "stack": "page.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"button:has-text('✕')\"\n============================================================\n    at Y:\\my-code-base\\Playwright-Test-Runner\\customWaits\\waitForTitle.test.ts:9:20\n    at TestTypeImpl._step (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\testType.js:214:13)\n    at Function.step (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\transform.js:133:12)\n    at Y:\\my-code-base\\Playwright-Test-Runner\\customWaits\\waitForTitle.test.ts:8:16\n    at WorkerRunner._runTestWithBeforeHooks (Y:\\my-code-base\\Playwright-Test-Runner\\node_modules\\@playwright\\test\\lib\\workerRunner.js:499:7)"
-                      }
+                      "title": "Enter test data",
+                      "duration": 4614
+                    },
+                    {
+                      "title": "Download file",
+                      "duration": 712
                     }
                   ],
                   "attachments": [
                     {
+                      "name": "downloaded",
+                      "contentType": "text/plain",
+                      "path": "y:\\my-code-base\\Playwright-Test-Runner\\test-results\\downloads-download-Download-file\\attachments\\68a9c7feb77dff9e2e176624d8e62f5c5ed505b2.txt"
+                    },
+                    {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\customWaits-waitForTitle-Wait-for-title-change\\test-failed-1.png"
+                      "path": "y:\\my-code-base\\Playwright-Test-Runner\\test-results\\downloads-download-Download-file\\test-finished-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "column": 20,
-                    "line": 9
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "file": "customWaits/waitForTitle.test.ts",
+          "file": "downloads/download.test.ts",
           "line": 3,
           "column": 1
         }

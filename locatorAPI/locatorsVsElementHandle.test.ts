@@ -9,7 +9,7 @@ test("Strict - Element handle", async ({ page }) => {
     await btn?.click();
 })
 
-test.only("Locator API", async ({ page }) => {
+test("Locator API", async ({ page }) => {
     await page.goto("https://letcode.in/elements");
     const ele = page.locator("input[name='username']")
     await ele?.fill("ortonikc");

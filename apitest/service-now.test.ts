@@ -5,7 +5,6 @@ let _sys_id: string;
 const short_description = "required ms office 365"
 // Create
 test("Create an Incident", async ({ request, baseURL }) => {
-
     const _response = await request.post(`${baseURL}`, {
         data: {
             "short_description": short_description,
