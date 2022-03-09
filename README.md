@@ -163,3 +163,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [Playwright is a game changer | Playwright Tutorial part - 67](https://youtu.be/EWXW2z0U3OQ)
 
 [How to download file & attach to report | Playwright Tutorial part - 68](https://youtu.be/xQxan2SlnKA)
+
+[Locator - Has & Has Text | Playwright Tutorial part - 69](https://youtu.be/1RUMsrYXUcA)

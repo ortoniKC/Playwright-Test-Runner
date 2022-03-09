@@ -55,13 +55,13 @@
   },
   "suites": [
     {
-      "title": "downloads\\download.test.ts",
-      "file": "downloads/download.test.ts",
+      "title": "advanceSelect\\bootstrap.test.ts",
+      "file": "advanceSelect/bootstrap.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Download file",
+          "title": "Select from bootstrap dropdown",
           "ok": true,
           "tags": [],
           "tests": [
@@ -74,43 +74,18 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9444,
+                  "duration": 4939,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Goto the application",
-                      "duration": 1463
-                    },
-                    {
-                      "title": "Enter test data",
-                      "duration": 4614
-                    },
-                    {
-                      "title": "Download file",
-                      "duration": 712
-                    }
-                  ],
-                  "attachments": [
-                    {
-                      "name": "downloaded",
-                      "contentType": "text/plain",
-                      "path": "y:\\my-code-base\\Playwright-Test-Runner\\test-results\\downloads-download-Download-file\\attachments\\68a9c7feb77dff9e2e176624d8e62f5c5ed505b2.txt"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "y:\\my-code-base\\Playwright-Test-Runner\\test-results\\downloads-download-Download-file\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "downloads/download.test.ts",
-          "line": 3,
+          "file": "advanceSelect/bootstrap.test.ts",
+          "line": 4,
           "column": 1
         }
       ]
