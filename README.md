@@ -165,3 +165,5 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 [How to download file & attach to report | Playwright Tutorial part - 68](https://youtu.be/xQxan2SlnKA)
 
 [Locator - Has & Has Text | Playwright Tutorial part - 69](https://youtu.be/1RUMsrYXUcA)
+
+[Playwright Hard & Soft Assert, Highlight Locators | Playwright tutorial - part 70](https://youtu.be/i2iLTjdw2y0)
