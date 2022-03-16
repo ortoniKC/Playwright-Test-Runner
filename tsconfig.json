@@ -5,5 +5,17 @@
         "module": "commonjs",
         "sourceMap": true,
         "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "@pages/*": [
+                "pom/letcodemodules/credentials/*"
+            ],
+            "@fixtures/*": [
+                "fixtures/*"
+            ],
+            "@files/*": [
+                "uploadFolder/*"
+            ]
+        }
     }
 }

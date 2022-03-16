@@ -1,11 +1,11 @@
 
-import * as data from "../data/login.cred.json";
+import * as data from "../../data/login.cred.json";
 import { BrowserContext, expect, Page, test } from "@playwright/test";
-import CommonFunctions from "../page/common.page";
-import HeaderPage from "../page/Header.page";
-import LoginPage from "../page/Login.page";
+import CommonFunctions from "../letcodemodules/credentials/common.page";
+import HeaderPage from "../letcodemodules/credentials/Header.page";
+import LoginPage from "../letcodemodules/credentials/Login.page";
 
-test.describe("TC001", () => {
+test.describe("TC002", () => {
     let header: HeaderPage;
     let login: LoginPage;
     let common: CommonFunctions;
