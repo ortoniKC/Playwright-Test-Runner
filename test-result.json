@@ -11,14 +11,14 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "y:/my-code-base/Playwright-Test-Runner/test-results",
+        "outputDir": "Y:/my-code-base/Playwright-Test-Runner/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "",
-        "testDir": "y:/my-code-base/Playwright-Test-Runner",
+        "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "**/?(*.)@(spec|test).*"
+          "advanceSelect\\bootstrap.test.ts"
         ],
         "timeout": 30000
       }
@@ -45,7 +45,7 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "y:/my-code-base/Playwright-Test-Runner",
+    "rootDir": "Y:/my-code-base/Playwright-Test-Runner",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -56,87 +56,105 @@
   },
   "suites": [
     {
-      "title": "test\\smoke\\cms\\pom.test.ts",
-      "file": "test/smoke/cms/pom.test.ts",
+      "title": "advanceSelect\\bootstrap.test.ts",
+      "file": "advanceSelect/bootstrap.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "POM - TC001",
-          "file": "test/smoke/cms/pom.test.ts",
-          "line": 6,
-          "column": 6,
-          "specs": [
+          "title": "Select from bootstrap dropdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Login positive",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 7118,
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 12206,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "y:\\my-code-base\\Playwright-Test-Runner\\test-results\\test-smoke-cms-pom-POM---TC001-Login-positive\\test-finished-1.png"
-                        }
-                      ]
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
+                    },
+                    {
+                      "text": "api info\n"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "file": "test/smoke/cms/pom.test.ts",
-              "line": 8,
-              "column": 5
-            },
-            {
-              "title": "Login again",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 11028,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "y:\\my-code-base\\Playwright-Test-Runner\\test-results\\test-smoke-cms-pom-POM---TC001-Login-again\\test-finished-1.png"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\advanceSelect-bootstrap-Select-from-bootstrap-dropdown\\test-finished-1.png"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "file": "test/smoke/cms/pom.test.ts",
-              "line": 21,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "file": "advanceSelect/bootstrap.test.ts",
+          "line": 10,
+          "column": 1
         }
       ]
     }

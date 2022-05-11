@@ -6,7 +6,7 @@ const config: PlaywrightTestConfig = {
     use: {
         viewport: null,
         headless: !true,
-        browserName: "chromium",
+        // browserName: "chromium",
         screenshot: "on",
         // video: "on",
         // trace: "on",
@@ -30,7 +30,7 @@ const config: PlaywrightTestConfig = {
     },
     // timeout: 60000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["advanceSelect\\bootstrap.test.ts"],
+    testMatch: ["test//smoke//cms//pom.test.tstest//smoke//cms//pom.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [
