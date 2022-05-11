@@ -18,4 +18,4 @@ steps:
 - script: |
     npm install
     npm run test
-  displayName: 'npm install and build'
+  displayName: 'Executing tests'
