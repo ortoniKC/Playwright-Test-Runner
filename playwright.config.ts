@@ -22,10 +22,10 @@ const config: PlaywrightTestConfig = {
         ,
         launchOptions: {
             args: ["--start-maximized"],
-            logger: {
-                isEnabled: (name, severity) => true,
-                log: (name, severity, message, args) => console.log(name, severity)
-            }
+            // logger: {
+            //     // isEnabled: (name, severity) => true,
+            //     // log: (name, severity, message, args) => console.log(name, severity)
+            // }
         }
     },
     // timeout: 60000,

@@ -32,8 +32,9 @@ export default class LoginPage {
         await ele?.fill(pass);
     }
     public async clickLoginBtn() {
-        const ele = await this.eleLoginBtn;
-        await ele?.click();
+        await this.page.click("//button[text()='LOGIN']")
+        // const ele = await this.eleLoginBtn;
+        // await ele?.click();
     }
 
     public async login(username: string, pass: string) {
