@@ -30,7 +30,7 @@ const config: PlaywrightTestConfig = {
     },
     // timeout: 60000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["test\\smoke\\cms\\pom.test.tstest\\smoke\\cms\\pom.test.ts"],
+    testMatch: ["test/smoke/cms/pom.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [

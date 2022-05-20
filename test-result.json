@@ -18,7 +18,7 @@
         "testDir": "Y:/my-code-base/Playwright-Test-Runner",
         "testIgnore": [],
         "testMatch": [
-          "advanceSelect\\bootstrap.test.ts"
+          "test/smoke/cms/pom.test.ts"
         ],
         "timeout": 30000
       }
@@ -56,105 +56,260 @@
   },
   "suites": [
     {
-      "title": "advanceSelect\\bootstrap.test.ts",
-      "file": "advanceSelect/bootstrap.test.ts",
+      "title": "test\\smoke\\cms\\pom.test.ts",
+      "file": "test/smoke/cms/pom.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Select from bootstrap dropdown",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "POM - TC001",
+          "file": "test/smoke/cms/pom.test.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
+              "title": "Login positive",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 7118,
-                  "stdout": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
                     {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
-                    },
-                    {
-                      "text": "api info\n"
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30420,
+                      "error": {
+                        "message": "\u001b[31mTimeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "stdout": [
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\test-smoke-cms-pom-POM---TC001-Login-positive\\test-failed-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\advanceSelect-bootstrap-Select-from-bootstrap-dropdown\\test-finished-1.png"
-                    }
-                  ]
+                  "status": "unexpected"
                 }
               ],
-              "status": "expected"
+              "file": "test/smoke/cms/pom.test.ts",
+              "line": 8,
+              "column": 5
+            },
+            {
+              "title": "Login again",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 6820,
+                      "stdout": [
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        },
+                        {
+                          "text": "api info\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "Y:\\my-code-base\\Playwright-Test-Runner\\test-results\\test-smoke-cms-pom-POM---TC001-Login-again\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "test/smoke/cms/pom.test.ts",
+              "line": 21,
+              "column": 5
             }
-          ],
-          "file": "advanceSelect/bootstrap.test.ts",
-          "line": 10,
-          "column": 1
+          ]
         }
       ]
     }
