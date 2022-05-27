@@ -1,7 +1,26 @@
-import { PlaywrightTestConfig } from "@playwright/test";
+import { devices, PlaywrightTestConfig } from "@playwright/test";
 
 
 const config: PlaywrightTestConfig = {
+    workers: 1,
+    projects: [
+        {
+            name: 'chromium',
+            use: { ...devices['Desktop Chrome'] },
+        },
+        {
+            name: 'Pixel',
+            use: { ...devices['Pixel 5'] },
+        },
+        // {
+        //     name: 'firefox',
+        //     use: { ...devices['Desktop Firefox'] },
+        // },
+        // {
+        //     name: 'webkit',
+        //     use: { ...devices['Desktop Safari'] },
+        // },
+    ],
 
     use: {
         viewport: null,

@@ -3,9 +3,11 @@ import { Page } from "@playwright/test";
 export default class HeaderPage {
 
     private page: Page;
+    private isMob: boolean | undefined;
 
-    constructor(page: Page) {
+    constructor(page: Page, isMob: boolean | undefined) {
         this.page = page;
+        this.isMob = isMob
     }
 
 
@@ -26,6 +28,11 @@ export default class HeaderPage {
     }
 
     public async clickLoginLink() {
+        console.log("Is mobile view? " + this.isMob);
+
+        if (this.isMob) {
+            await this.page.click("//a[@aria-label='menu']")
+        }
         await Promise.all([
             this.page.waitForNavigation({
                 waitUntil: "domcontentloaded"

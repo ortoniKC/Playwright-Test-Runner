@@ -18,7 +18,7 @@ test.describe("POM - TC001", () => {
         await page.reload();
         await headerPage.clickSignOutLink();
     });
-    test("Login again", async ({ headerPage, page, loginPage }) => {
+    test.only("Login again", async ({ headerPage, page, loginPage }) => {
         await page.goto("https://letcode.in/")
         await headerPage.clickLoginLink();
         await loginPage.login("koushik350@gmail.com", data.pass);

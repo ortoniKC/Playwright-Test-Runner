@@ -20,8 +20,8 @@ const test = baseTexst.extend<{
     loginPage: async ({ page }, use) => {
         await use(new LoginPage(page));
     },
-    headerPage: async ({ page }, use) => {
-        await use(new HeaderPage(page));
+    headerPage: async ({ page, isMobile }, use) => {
+        await use(new HeaderPage(page, isMobile));
     },
     commonPage: async ({ page }, use) => {
         await use(new CommonFunctions(page));
