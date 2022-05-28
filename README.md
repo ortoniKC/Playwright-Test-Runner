@@ -167,3 +167,15 @@ A
 [Locator - Has & Has Text | Playwright Tutorial part - 69](https://youtu.be/1RUMsrYXUcA)
 
 [Playwright Hard & Soft Assert, Highlight Locators | Playwright tutorial - part 70](https://youtu.be/i2iLTjdw2y0)
+
+[POM Clean Code | Playwright Tutorial part 71](https://youtu.be/Vm870yqU7Wc)
+
+[Maximize Window | Playwright Tutorial - Part 72](https://youtu.be/GWzN9EYSNPI)
+
+[Playwright Installation - 2022](https://youtu.be/AdFgipIPAlg)
+
+[How To Test Mobile & Desktop Browser? Playwright tutorial - Part 73](https://youtu.be/NBHDp-QvGBQ)
+
+[Playwright + Azure Pipeline | Playwright Tutorial - Part 74](https://youtu.be/RCzXuCt8Lng)
+
+[Parametrize Tests | Playwright Tutorial - Part 75](https://youtu.be/5F-DTlyyMAA)

@@ -2,25 +2,26 @@ import { devices, PlaywrightTestConfig } from "@playwright/test";
 
 
 const config: PlaywrightTestConfig = {
-    workers: 1,
-    projects: [
-        {
-            name: 'chromium',
-            use: { ...devices['Desktop Chrome'] },
-        },
-        {
-            name: 'Pixel',
-            use: { ...devices['Pixel 5'] },
-        },
-        // {
-        //     name: 'firefox',
-        //     use: { ...devices['Desktop Firefox'] },
-        // },
-        // {
-        //     name: 'webkit',
-        //     use: { ...devices['Desktop Safari'] },
-        // },
-    ],
+    workers: 4,
+    fullyParallel: true,
+    // projects: [
+    //     {
+    //         name: 'chromium',
+    //         use: { ...devices['Desktop Chrome'] },
+    //     },
+    //     {
+    //         name: 'Pixel',
+    //         use: { ...devices['Pixel 5'] },
+    //     },
+    //     // {
+    //     //     name: 'firefox',
+    //     //     use: { ...devices['Desktop Firefox'] },
+    //     // },
+    //     // {
+    //     //     name: 'webkit',
+    //     //     use: { ...devices['Desktop Safari'] },
+    //     // },
+    // ],
 
     use: {
         viewport: null,
@@ -49,7 +50,7 @@ const config: PlaywrightTestConfig = {
     },
     // timeout: 60000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["test/smoke/cms/pom.test.ts"],
+    testMatch: ["parameterized-test/computerDB.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [
