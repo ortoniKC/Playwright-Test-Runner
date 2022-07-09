@@ -2,8 +2,10 @@ import { devices, PlaywrightTestConfig } from "@playwright/test";
 
 
 const config: PlaywrightTestConfig = {
-    workers: 4,
-    fullyParallel: true,
+    
+
+    // workers: 4,
+    // fullyParallel: true,
     // projects: [
     //     {
     //         name: 'chromium',
@@ -42,6 +44,7 @@ const config: PlaywrightTestConfig = {
         ,
         launchOptions: {
             args: ["--start-maximized"],
+
             // logger: {
             //     // isEnabled: (name, severity) => true,
             //     // log: (name, severity, message, args) => console.log(name, severity)
@@ -50,7 +53,7 @@ const config: PlaywrightTestConfig = {
     },
     // timeout: 60000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["parameterized-test/computerDB.test.ts"],
+    testMatch: ["harDemo/trackRequest.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [
