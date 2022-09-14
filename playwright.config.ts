@@ -2,7 +2,7 @@ import { devices, PlaywrightTestConfig } from "@playwright/test";
 
 
 const config: PlaywrightTestConfig = {
-    
+
 
     // workers: 4,
     // fullyParallel: true,
@@ -30,7 +30,7 @@ const config: PlaywrightTestConfig = {
         headless: !true,
         // browserName: "chromium",
         screenshot: "on",
-        // video: "on",
+        video: "on",
         // trace: "on",
         baseURL: "https://www.letcode.in",
         // baseURL: "https://dev107189.service-now.com/api/now/table/incident",
@@ -53,14 +53,14 @@ const config: PlaywrightTestConfig = {
     },
     // timeout: 60000,
     // grep: [new RegExp("@smoke"), new RegExp("@reg")],
-    testMatch: ["harDemo/trackRequest.test.ts"],
+    // testMatch: ["harDemo/trackRequest.test.ts"],
     retries: 0,
     // reporter: "./customReport/myReporter.ts"
     reporter: [
         ["dot"], // -> console
         ["json", { outputFile: "test-result.json" }], //  -> JSON
         ['html', {
-            open: "never"
+            open: "always"
         }] // -> HTML
     ],
     // globalTeardown: './helper/globalsetup.ts'

@@ -4,7 +4,8 @@ test("Block images - Network Intercept", async ({ page }) => {
 
     await page.route("**/*", request => {
 
-        return request.request().url().startsWith("https://googleads.g.doubleclick.net/pagead/ads")
+        return request.request().url()
+            .startsWith("https://googleads.g.doubleclick.net/pagead/ads")
             ? request.abort() :
             request.continue();
 
