@@ -179,3 +179,15 @@ A
 [Playwright + Azure Pipeline | Playwright Tutorial - Part 74](https://youtu.be/RCzXuCt8Lng)
 
 [Parametrize Tests | Playwright Tutorial - Part 75](https://youtu.be/5F-DTlyyMAA)
+
+[Playwright Framework #1 | Base functions | Playwright Tutorial - Part 76](https://youtu.be/orWd3b6zqHI)
+
+[Migrate from Jest to Playwright Test Runner | Playwright Tutorial - part 77](https://youtu.be/qoG5gidhj_A)
+
+[WaitFor an Element | Playwright Tutorial - Part 78](https://youtu.be/vTTwL6AZ6l0)
+
+[Network Replay | HAR | Playwright Tutorial - Part 79](https://youtu.be/uGS55H2HsoI)
+
+[Playwright Framework #2 | Execute in multiple environment | Playwright Tutorial - Part 80](https://youtu.be/GQStVI5qbLI)
+
+[Mocking test data | Playwright part 82](https://youtu.be/c7zCQ8FKih4)
